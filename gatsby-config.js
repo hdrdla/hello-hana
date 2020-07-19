@@ -14,7 +14,7 @@ module.exports = {
     title: `Hana Drdla - Web & Shopify Developer`,
     description: `Hana Drdla is a Web Developer that designs and builds website on Shopify, Wordpress and Squarespace. Hana loves to work with entrepreneurs and small businesses.`,
     siteUrl: "https://hanadrdla.com",
-    image: "Hana-about.jpg",
+    image: "src/images/Hana-web-developer-2.jpg",
     twitterUsername: "@hdrdla",
     author: `Hana Drdla`,
   },
@@ -47,7 +47,7 @@ module.exports = {
         background_color: `#B6E7E8`,
         theme_color: `#B6E7E8`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `static/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,

@@ -395,7 +395,8 @@ a.btn {
 /* Button */
 
 button:focus,
-a:focus {
+a:focus,
+.burger:focus {
   outline: none;
 }
 

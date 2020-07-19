@@ -22,6 +22,7 @@ const Header = () => {
       </div>
     )
   }
+  Tawktome()
 
   const data = useStaticQuery(graphql`
     query {
