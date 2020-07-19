@@ -41,6 +41,11 @@ const Header = () => {
             data-uid="2ddd36003f"
             src="https://hanadrdla.ck.page/2ddd36003f/index.js"
           ></script>
+          <script
+            type="application/javascript"
+            src="https://sdki.truepush.com/sdk/v2.0.2/app.js"
+            async
+          ></script>
         </Helmet>
 
         <div className="navigation-bar">

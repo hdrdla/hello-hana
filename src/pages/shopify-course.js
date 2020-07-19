@@ -5,20 +5,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Helmet } from "react-helmet"
+import loadable from "@loadable/component"
 
 const ShopifyCoursePage = () => {
-  var truepush = window.truepush || []
-  truepush.push(function () {
-    truepush.Init(
-      {
-        id: "5f113fe2175ac2180a6955df",
-      },
-      function (error) {
-        if (error) console.error(error)
-      }
+  const Push = loadable(() => import("./pushnotification.js"))
+  function Pushme() {
+    return (
+      <div>
+        <Push />
+      </div>
     )
-  })
+  }
 
   const data = useStaticQuery(graphql`
     query {
@@ -44,13 +41,6 @@ const ShopifyCoursePage = () => {
   return (
     <Layout>
       <SEO title="Shopify Course" />
-      <Helmet>
-        <script
-          type="application/javascript"
-          src="https://sdki.truepush.com/sdk/v2.0.2/app.js"
-          async
-        ></script>
-      </Helmet>
       <section>
         <div className="flex-space-between reverse">
           <div className="about-hero-flex-1">
