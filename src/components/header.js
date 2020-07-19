@@ -8,23 +8,21 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import loadable from "@loadable/component"
 
 library.add(fab, faEnvelope, faChevronRight)
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  var Tawk_API = Tawk_API || {},
-    Tawk_LoadStart = new Date()
-  ;(function () {
-    var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0]
-    s1.async = true
-    s1.src = "https://embed.tawk.to/5f1180367258dc118bee6d1f/default"
-    s1.charset = "UTF-8"
-    s1.setAttribute("crossorigin", "*")
-    s0.parentNode.insertBefore(s1, s0)
-  })()
+  const Tawk = loadable(() => import("./tawk.js"))
+  function Tawk() {
+    return (
+      <div>
+        <Tawk />
+      </div>
+    )
+  }
 
   const data = useStaticQuery(graphql`
     query {
