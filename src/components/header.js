@@ -108,6 +108,7 @@ const Header = () => {
                 onKeyDown={toggleMenu}
                 role="button"
                 tabIndex={0}
+                aria-label="Menu"
               >
                 <div className="line1"></div>
                 <div className="line2"></div>
