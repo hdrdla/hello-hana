@@ -14,7 +14,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const Tawk = loadable(() => import("./tawk.js"))
-  function Tawk() {
+  function Tawktome() {
     return (
       <div>
         <Tawk />
