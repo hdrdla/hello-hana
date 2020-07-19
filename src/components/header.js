@@ -1,7 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
