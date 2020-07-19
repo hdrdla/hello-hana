@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
-
+import Img from "gatsby-image"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faChevronRight } from "@fortawesome/free-solid-svg-icons"
@@ -21,6 +21,18 @@ const Header = () => {
       </div>
     )
   }
+
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -51,7 +63,11 @@ const Header = () => {
         <div className="navigation-bar">
           <div className="v-center">
             <Link to="/" title="Home Page">
-              Hana Drdla
+              <Img
+                fluid={data.logo.childImageSharp.fluid}
+                className="logo"
+                loading="eager"
+              />
             </Link>
           </div>
 
