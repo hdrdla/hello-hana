@@ -24,18 +24,6 @@ const Header = () => {
     )
   }
 
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
@@ -60,11 +48,7 @@ const Header = () => {
         <div className="navigation-bar">
           <div className="v-center">
             <Link to="/" title="Home Page">
-              <Img
-                fluid={data.logo.childImageSharp.fluid}
-                className="logo"
-                loading="eager"
-              />
+              Hana Drdla
             </Link>
           </div>
 
