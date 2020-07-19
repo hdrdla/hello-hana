@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import loadable from "@loadable/component"
 
 const ShopifyCoursePage = () => {
-  const Push = loadable(() => import("./pushnotification.js"))
+  const Push = loadable(() => import("../components/pushnotification.js"))
   function Pushme() {
     return (
       <div>
