@@ -3,10 +3,10 @@
  *  Gatsby's useStaticQuery React hook
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
- * 
  *
- * 
- * 
+ *
+ *
+ *
  *<meta property="og:description" content="Delilah Creative is a Branding and Website Design studio which specializes in the Squarespace and Shopify platforms. With bases in Brooklyn, London and Sydney, we love to work with small businesses and lifestyle brands."/>
  */
 
@@ -15,7 +15,15 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, schemaMarkup }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  image: metaImage,
+  title,
+  schemaMarkup,
+  pathname,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -24,6 +32,8 @@ function SEO({ description, lang, meta, title, schemaMarkup }) {
             title
             description
             author
+            keywords
+            siteUrl
           }
         }
       }
@@ -31,6 +41,11 @@ function SEO({ description, lang, meta, title, schemaMarkup }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image =
+    metaImage && metaImage.src
+      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
+      : null
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
     <Helmet
@@ -39,10 +54,24 @@ function SEO({ description, lang, meta, title, schemaMarkup }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: "keywords",
+          content: site.siteMetadata.keywords,
         },
         {
           property: `og:title`,
@@ -72,11 +101,41 @@ function SEO({ description, lang, meta, title, schemaMarkup }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(
+          metaImage
+            ? [
+                {
+                  property: "og:image",
+                  content: image,
+                },
+                {
+                  property: "og:image:width",
+                  content: metaImage.width,
+                },
+                {
+                  property: "og:image:height",
+                  content: metaImage.height,
+                },
+                {
+                  name: "twitter:card",
+                  content: "summary_large_image",
+                },
+              ]
+            : [
+                {
+                  name: "twitter:card",
+                  content: "summary",
+                },
+              ]
+        )
+        .concat(meta)}
     >
-    {schemaMarkup &&
-      <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
-    }
+      {schemaMarkup && (
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
+      )}
     </Helmet>
   )
 }
@@ -92,6 +151,12 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+  }),
+  pathname: PropTypes.string,
 }
 
 export default SEO
