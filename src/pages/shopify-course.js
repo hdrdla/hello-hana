@@ -16,6 +16,7 @@ const ShopifyCoursePage = () => {
       </div>
     )
   }
+  Pushme()
 
   const data = useStaticQuery(graphql`
     query {
