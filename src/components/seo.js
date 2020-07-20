@@ -41,6 +41,7 @@ function SEO({
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const titleTemplate = title | site.siteMetadata.title
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`

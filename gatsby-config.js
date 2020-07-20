@@ -11,8 +11,8 @@ module.exports = {
 
 module.exports = {
   siteMetadata: {
-    title: `Hana Drdla - Web & Shopify Developer`,
-    description: `Hana Drdla is a Web Developer that designs and builds website on Shopify, Wordpress and Squarespace. Hana loves to work with entrepreneurs and small businesses.`,
+    title: `Web & Shopify Developer | Hana Drdla`,
+    description: `Hana Drdla is a Web Developer that designs and builds website on Shopify, Wordpress and Squarespace. Working with small businesses, Hana builds websites that convert visitors into customers.`,
     author: `Hana Drdla`,
     keywords: `Shopify developer, Shopify courses, woman web developer, female web developer, frontend developer, Hana, Drdla, Hana Drdla`,
     siteUrl: "https://hanadrdla.com",
