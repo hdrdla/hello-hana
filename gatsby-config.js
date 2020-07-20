@@ -16,7 +16,7 @@ module.exports = {
     author: `Hana Drdla`,
     keywords: `Shopify developer, Shopify courses, woman web developer, female web developer, frontend developer, Hana, Drdla, Hana Drdla`,
     siteUrl: "https://hanadrdla.com",
-    image: "/src/images/Hana-web-developer-2.jpg",
+    image: "/static/Hana-web-developer.jpg",
     twitterUsername: "@hdrdla",
   },
   plugins: [
@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#B6E7E8`,
         theme_color: `#B6E7E8`,
         display: `minimal-ui`,
-        icon: `static/favicon.png`, // This path is relative to the root of the site.
+        icon: `/static/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,

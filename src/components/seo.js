@@ -74,7 +74,7 @@ function SEO({
           content: site.siteMetadata.keywords,
         },
         {
-          property: `og:title`,
+          property: `og:titleTemplate`,
           content: title,
         },
         {
@@ -94,7 +94,7 @@ function SEO({
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
+          name: `twitter:titleTemplate`,
           content: title,
         },
         {
