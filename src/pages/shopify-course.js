@@ -22,7 +22,7 @@ const ShopifyCoursePage = () => {
     query {
       laptophands: file(relativePath: { eq: "Woman-Shopify-Course.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,7 +31,7 @@ const ShopifyCoursePage = () => {
         relativePath: { eq: "Woman-Shopify-Course-Online.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }

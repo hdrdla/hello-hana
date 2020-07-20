@@ -20,21 +20,7 @@ const IndexPage = () => {
     query {
       hana: file(relativePath: { eq: "Hana-web-developer.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      fraukeWebsite: file(relativePath: { eq: "Frauke copy.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      bhcWebsite: file(relativePath: { eq: "BHC copy.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
