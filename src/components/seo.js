@@ -34,6 +34,7 @@ function SEO({
             author
             keywords
             siteUrl
+            image
           }
         }
       }
@@ -41,11 +42,11 @@ function SEO({
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const titleTemplate = title | site.siteMetadata.title
-  const image =
-    metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null
+  // const titleTemplate = title | site.siteMetadata.title
+  const image = site.siteMetadata.image
+  // metaImage && metaImage.src
+  //   ? `${site.siteMetadata.siteUrl}${metaImage.src}`
+  //   : null
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
@@ -53,8 +54,12 @@ function SEO({
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={
+        title === "Home"
+          ? site.siteMetadata.title
+          : `${title} | ${site.siteMetadata.title}`
+      }
+      // titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={
         canonical
           ? [
@@ -65,45 +70,45 @@ function SEO({
             ]
           : []
       }
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          name: "keywords",
-          content: site.siteMetadata.keywords,
-        },
-        {
-          property: `og:titleTemplate`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:titleTemplate`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(
+      meta={
+        [
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            name: "keywords",
+            content: site.siteMetadata.keywords,
+          },
+          {
+            property: `og:titleTemplate`,
+            content: title,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: site.siteMetadata.author,
+          },
+          {
+            name: `twitter:titleTemplate`,
+            content: title,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
+        ].concat(
           metaImage
             ? [
                 {
@@ -130,7 +135,8 @@ function SEO({
                 },
               ]
         )
-        .concat(meta)}
+        // .concat(meta)
+      }
     >
       {schemaMarkup && (
         <script type="application/ld+json">

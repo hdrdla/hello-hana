@@ -1,22 +1,45 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import loadable from "@loadable/component"
+
+// import loadable from "@loadable/component"
+// import PushNote from "../components/pushnotification.js"
 
 const ShopifyCoursePage = () => {
-  const Push = loadable(() => import("../components/pushnotification.js"))
-  function Pushme() {
-    return (
-      <div>
-        <Push />
-      </div>
-    )
-  }
-  Pushme()
+  //   const Push = loadable(() => import("../components/pushnotification.js"))
+  //   function Pushme() {
+  //     return (
+  //       <div>
+  //         <Push />
+  //       </div>
+  //     )
+  //   }
+  //   Pushme()
+
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.type = "application/javascript"
+    script.src = "https://sdki.truepush.com/sdk/v2.0.2/app.js"
+    script.async = true
+    document.body.appendChild(script)
+
+    var truepush = window.truepush || []
+    truepush.push(function () {
+      truepush.Init(
+        {
+          id: "5f113fe2175ac2180a6955df",
+        },
+        function (error) {
+          if (error) console.error(error)
+        }
+      )
+    })
+    // PushNote()
+  }, [])
 
   const data = useStaticQuery(graphql`
     query {
@@ -280,6 +303,11 @@ const ShopifyCoursePage = () => {
         <div className="accordion vertical">
           <ul>
             <li>
+              <input
+                type="checkbox"
+                id="checkbox-1"
+                name="checkbox-accordion"
+              />
               <input
                 type="checkbox"
                 id="checkbox-1"

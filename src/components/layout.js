@@ -6,27 +6,26 @@
  */
 
 import React from "react"
-import Header from './header'
-import Footer from './footer'
-import "../styles/styles.scss" 
+import Header from "./header"
+import Footer from "./footer"
+import "../styles/styles.scss"
 
 function Wrapper(props) {
   return (
     <div
-    style={{
-      width: `80%`,
-      margin: `auto`,
-      position: `relative`,
-    }}
-  >
-    {props.children}
-  </div>
+      style={{
+        width: `80%`,
+        margin: `auto`,
+        position: `relative`,
+      }}
+    >
+      {props.children}
+    </div>
   )
 }
 
-
 function Layout(props) {
-  console.log(props)
+  // console.log(props)
 
   return (
     <>
@@ -36,7 +35,6 @@ function Layout(props) {
       </Wrapper>
       <Footer />
     </>
-
   )
 }
 

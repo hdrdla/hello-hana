@@ -170,6 +170,7 @@ const AboutPage = () => {
                 <Img
                   fluid={data.hulya.childImageSharp.fluid}
                   className="round-img hidden-mobile"
+                  alt=""
                 />
               </div>
               <div>
@@ -208,6 +209,7 @@ const AboutPage = () => {
                 <Img
                   fluid={data.carol.childImageSharp.fluid}
                   className="round-img hidden-mobile"
+                  alt=""
                 />
               </div>
               <div>
@@ -249,6 +251,7 @@ const AboutPage = () => {
                 <Img
                   fluid={data.katrina.childImageSharp.fluid}
                   className="round-img hidden-mobile"
+                  alt=""
                 />
               </div>
               <div>

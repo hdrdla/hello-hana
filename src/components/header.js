@@ -14,15 +14,15 @@ library.add(fab, faEnvelope, faChevronRight)
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const Tawk = loadable(() => import("./tawk.js"))
-  function Tawktome() {
-    return (
-      <div>
-        <Tawk />
-      </div>
-    )
-  }
-  Tawktome()
+  // const Tawk_API = "8f0f3f5179ce8a7a218213415f0bae5c6a6bb876" || {}
+
+  var s1 = document.createElement("script"),
+    s0 = document.getElementsByTagName("script")[0]
+  s1.async = true
+  s1.src = "https://embed.tawk.to/5f1180367258dc118bee6d1f/default"
+  s1.charset = "UTF-8"
+  s1.setAttribute("crossorigin", "*")
+  s0.parentNode.insertBefore(s1, s0)
 
   const data = useStaticQuery(graphql`
     query {
@@ -44,11 +44,11 @@ const Header = () => {
     <div>
       <header>
         <Helmet>
-          <script
+          {/* <script
             async
             data-uid="0705839d87"
             src="https://hanadrdla.ck.page/0705839d87/index.js"
-          ></script>
+          ></script> */}
           <script src="/path/to/flickity.pkgd.min.js"></script>
           <script
             async
@@ -77,7 +77,7 @@ const Header = () => {
             <nav>
               <ul className={`nav-links ${isOpen ? "menu-show" : ""}`}>
                 <li className="hidden-large">
-                  <Link href="/">Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <Link to="/services">Services</Link>
@@ -117,6 +117,7 @@ const Header = () => {
             </nav>
           </div>
         </div>
+
         <span className="grid-v">
           <span className="vertical-line grid-v-1"></span>
           <span className="vertical-line grid-v-2"></span>
