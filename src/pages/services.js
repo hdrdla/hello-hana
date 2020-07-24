@@ -1,13 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ServicesPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          image
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
-      <SEO title="Services" />
+      <SEO title="Services" image={data.site.siteMetadata.image} />
       <section>
         <h1 className="hidden">Web Design and Development Services</h1>
         <p className="h1 indent">Services</p>

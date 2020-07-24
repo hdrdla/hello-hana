@@ -70,45 +70,45 @@ function SEO({
             ]
           : []
       }
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          name: "keywords",
-          content: site.siteMetadata.keywords,
-        },
-        {
-          property: `og:titleTemplate`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:titleTemplate`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(
+      meta={
+        [
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            name: "keywords",
+            content: site.siteMetadata.keywords,
+          },
+          {
+            property: `og:titleTemplate`,
+            content: title,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: site.siteMetadata.author,
+          },
+          {
+            name: `twitter:titleTemplate`,
+            content: title,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
+        ].concat(
           metaImage
             ? [
                 {
@@ -135,7 +135,8 @@ function SEO({
                 },
               ]
         )
-        .concat(meta)}
+        .concat(meta)
+      }
     >
       {schemaMarkup && (
         <script type="application/ld+json">

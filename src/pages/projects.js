@@ -40,12 +40,17 @@ const ProjectsPage = () => {
           showUrl
         }
       }
+      site {
+        siteMetadata {
+          image
+        }
+      }
     }
   `)
 
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="Projects" image={data.site.siteMetadata.image} />
       <section>
         <h1 className="indent">Recent Projects</h1>
         <div className="flex-space-between reverse project-showcase">

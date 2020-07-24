@@ -30,6 +30,7 @@ const IndexPage = () => {
           title
           description
           author
+          image
         }
       }
     }
@@ -53,7 +54,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" schemaMarkup={schema} />
+      <SEO title="Home" schemaMarkup={schema} image={data.site.siteMetadata.image} />
 
       <section className="home">
         <div className="flex-space-between">

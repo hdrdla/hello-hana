@@ -1,12 +1,23 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Socials from "../components/socials"
 import SEO from "../components/seo"
 
 const ContactPage = () => {
+  const data = useStaticQuery(graphql`
+    query {     
+      site {
+        siteMetadata {         
+          image
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO title="Contact" image={data.site.siteMetadata.image} />
       <section>
         <h1 className="indent half-width">
           Let's make something great together

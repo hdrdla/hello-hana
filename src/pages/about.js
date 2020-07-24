@@ -38,8 +38,14 @@ const AboutPage = () => {
           }
         }
       }
+      site {
+        siteMetadata {
+          image
+        }
+      }
     }
   `)
+
 
   const flickityOptions = {
     autoPlay: true,
@@ -47,7 +53,7 @@ const AboutPage = () => {
   }
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="About" image={data.site.siteMetadata.image} />
       <section className="about">
         <h1 className="hidden">About me</h1>
         <div className="flex-space-between">

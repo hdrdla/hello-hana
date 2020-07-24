@@ -6,19 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-// import loadable from "@loadable/component"
-// import PushNote from "../components/pushnotification.js"
-
 const ShopifyCoursePage = () => {
-  //   const Push = loadable(() => import("../components/pushnotification.js"))
-  //   function Pushme() {
-  //     return (
-  //       <div>
-  //         <Push />
-  //       </div>
-  //     )
-  //   }
-  //   Pushme()
+
 
   useEffect(() => {
     const script = document.createElement("script")
@@ -59,12 +48,17 @@ const ShopifyCoursePage = () => {
           }
         }
       }
+      site {
+        siteMetadata {
+          image
+        }
+      }
     }
   `)
 
   return (
     <Layout>
-      <SEO title="Shopify Course" />
+      <SEO title="Shopify Course" image={data.site.siteMetadata.image} />
       <section>
         <div className="flex-space-between reverse">
           <div className="about-hero-flex-1">
