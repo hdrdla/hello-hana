@@ -16,7 +16,7 @@ module.exports = {
     author: `Hana Drdla`,
     keywords: `Shopify developer, Shopify courses, woman web developer, female web developer, frontend developer, Hana, Drdla, Hana Drdla`,
     siteUrl: "https://hanadrdla.com",
-    image: "static/Hana-web-developer.jpg",
+    image: `/Hana-web-developer.jpg`,
     twitterUsername: "@hdrdla",
   },
   plugins: [
