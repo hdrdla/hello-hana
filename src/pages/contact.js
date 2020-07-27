@@ -98,7 +98,7 @@ const ContactPage = () => {
                   required
                 />
                 <input
-                  type="website"
+                  type="url"
                   name="Website"
                   id="website"
                   placeholder="Your Website (if you have one)"
