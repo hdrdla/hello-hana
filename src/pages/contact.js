@@ -43,13 +43,16 @@ const ContactPage = () => {
         formData.append(name, data[name])
       }
 
-      fetch("http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943", {
-        method: "post",
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-        body: formData,
-      })
+      fetch(
+        "https://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943",
+        {
+          method: "post",
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+          body: formData,
+        }
+      )
     }
   }
 
