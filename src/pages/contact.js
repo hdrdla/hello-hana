@@ -1,19 +1,57 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Socials from "../components/socials"
 import SEO from "../components/seo"
 
+import Recaptcha from "react-recaptcha"
+
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
-    query {     
+    query {
       site {
-        siteMetadata {         
+        siteMetadata {
           image
         }
       }
     }
   `)
+
+  const [verify, setVerify] = useState(false)
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [site, setSite] = useState("")
+  const [msg, setMsg] = useState("")
+
+  var verifyCallback = function (response) {
+    setVerify(true)
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+
+    if (verify) {
+      const data = {
+        Name: name,
+        Email: email,
+        Website: site,
+        Message: msg,
+      }
+      const formData = new FormData()
+
+      for (const name in data) {
+        formData.append(name, data[name])
+      }
+
+      fetch("http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943", {
+        method: "post",
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+        body: formData,
+      })
+    }
+  }
 
   return (
     <Layout>
@@ -36,15 +74,18 @@ const ContactPage = () => {
           <div className="hero-flex-2">
             <div className="contact-form">
               <form
-                action="http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943"
-                method="POST"
-                encType="multipart/form-data"
+                // action="http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943"
+                // method="POST"
+                // encType="multipart/form-data"
+                onSubmit={handleSubmit}
               >
                 <input
                   type="text"
                   name="Name"
                   id="fullName"
                   placeholder="Your Name"
+                  value={name}
+                  onChange={e => setName(e.value)}
                   required
                 />
                 <input
@@ -52,6 +93,8 @@ const ContactPage = () => {
                   name="Email"
                   id="email"
                   placeholder="Your Email"
+                  value={email}
+                  onChange={e => setEmail(e.value)}
                   required
                 />
                 <input
@@ -59,16 +102,31 @@ const ContactPage = () => {
                   name="Website"
                   id="website"
                   placeholder="Your Website (if you have one)"
+                  value={site}
+                  onChange={e => setSite(e.value)}
                 />
                 <textarea
                   type="text"
                   name="Message"
                   id="message"
                   placeholder="Tell me about your project"
+                  value={msg}
+                  onChange={e => setMsg(e.value)}
                   required
                 ></textarea>
                 <p>Please detail your needs, budget and timeline.</p>
-                <input type="submit" value="Send" className="btn btn-purple" />
+                <Recaptcha
+                  sitekey="6LdVyrYZAAAAAEF_batl8M0o2BgDFzrML90p7M6B"
+                  render="explicit"
+                  // onloadCallback={callback}
+                  verifyCallback={verifyCallback}
+                />
+                <input
+                  type="submit"
+                  value="Send"
+                  className="btn btn-purple"
+                  disabled={!verify ? true : false}
+                />
               </form>
             </div>
           </div>
