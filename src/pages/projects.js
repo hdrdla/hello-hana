@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 //import Img from "gatsby-image"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -134,6 +135,23 @@ const ProjectsPage = () => {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <div className="horizontal-line"></div>
+      <section>
+        <h2 className="center half-width">Ready to start your project?</h2>
+        <div className="center">
+          <OutboundLink
+            href="https://hanadrdla.ck.page/prospective-client-packet"
+            target="_blank"
+            rel="noreferrer"
+            alt="Prospective Client Packet "
+            aria-label="Download my Prospective Client Packet"
+            className="btn btn-yellow"
+          >
+            Get the Prospective Client Packet
+          </OutboundLink>
         </div>
       </section>
     </Layout>

@@ -7,7 +7,6 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import loadable from "@loadable/component"
 
 library.add(fab, faEnvelope, faChevronRight)
 

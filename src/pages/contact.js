@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Socials from "../components/socials"
 import SEO from "../components/seo"
-
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Recaptcha from "react-recaptcha"
 
 const ContactPage = () => {
@@ -70,6 +70,22 @@ const ContactPage = () => {
               Tell me about the project you have in mind and I'll get back to
               you within 48 hours.
             </p>
+            <div className="pad-bottom">
+              <h3 className="underline ul-purple">
+                Get the&nbsp;
+                <OutboundLink
+                  href="https://hanadrdla.ck.page/prospective-client-packet"
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="Prospective Client Packet "
+                  aria-label="Download my Prospective Client Packet"
+                  className="h3"
+                >
+                  Prospective Client Packet.
+                </OutboundLink>
+              </h3>
+            </div>
+
             <h3 className="underline ul-yellow">Stay in Touch</h3>
             <Socials />
           </div>
@@ -101,7 +117,7 @@ const ContactPage = () => {
                   required
                 />
                 <input
-                  type="url"
+                  type="text"
                   name="Website"
                   id="website"
                   placeholder="Your Website (if you have one)"

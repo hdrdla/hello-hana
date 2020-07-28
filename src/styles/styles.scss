@@ -194,6 +194,10 @@ section.about {
   .about-hero-flex-2 {
     margin-top: 5%;
   }
+  .contact-hero-flex-1 {
+    flex-basis: 100%;
+    padding-top: 3rem;
+  }
   .flex-space-between.reverse {
     flex-wrap: wrap-reverse;
   }
@@ -222,10 +226,7 @@ section.about {
   .hidden-mobile {
     display: none;
   }
-  .contact-hero-flex-1 {
-    flex-basis: 100%;
-    padding-top: 3rem;
-  }
+
   .course-heading {
     text-align: center;
   }
@@ -265,6 +266,12 @@ section.about {
   left: 50vw;
 }
 
+@media #{$mobile} {
+  .grid-v-2 {
+    display: none;
+  }
+}
+
 .grid-v-3 {
   z-index: -2;
   position: fixed;
@@ -279,6 +286,7 @@ h1,
 h2,
 .h2,
 h3,
+.h3,
 h4 {
   font-weight: 500;
 }
@@ -294,9 +302,13 @@ h2,
   padding-bottom: 4rem;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  a {
+    text-decoration: none;
+  }
 }
 
 a,
@@ -338,6 +350,7 @@ a.btn {
     font-size: 4rem;
   }
   h3,
+  .h3,
   button,
   a.btn {
     font-size: 2.3rem;
@@ -367,6 +380,7 @@ a.btn {
     font-size: 2.4rem;
   }
   h3,
+  .h3,
   button,
   a.btn {
     font-size: 2.5rem;
@@ -863,7 +877,7 @@ footer {
   color: $color-light;
   ul {
     list-style-type: none;
-    line-height: 1.5;
+    line-height: 1.2;
     li a {
       color: $color-light;
       text-decoration: none;
@@ -1015,9 +1029,18 @@ input[type="checkbox"] {
   border: 2px solid $color-primary !important;
 }
 
-.formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
+formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.formkit-form[data-uid="2ddd36003f"] .formkit-input {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.formkit-form[data-uid="2ddd36003f"] [data-group="dropdown"] select {
+  color: $color-dark !important;
 }
 
 .newsletter-block {
@@ -1372,6 +1395,11 @@ input[type="checkbox"] {
   .pad-bottom {
     padding-bottom: 4rem;
   }
+}
+
+/** TAWK.TO **/
+#FoIcf6z-1595902611073” {
+  display: hidden !important;
 }
 
 /** ACCORDION **/

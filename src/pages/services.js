@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -149,9 +150,16 @@ const ServicesPage = () => {
         </div>
 
         <div className="center">
-          <Link to="/contact" className="btn btn-blue">
-            Start Now
-          </Link>
+          <OutboundLink
+            href="https://hanadrdla.ck.page/prospective-client-packet"
+            target="_blank"
+            rel="noreferrer"
+            alt="Prospective Client Packet "
+            aria-label="Download my Prospective Client Packet"
+            className="btn btn-blue"
+          >
+            Start your project
+          </OutboundLink>
         </div>
       </section>
 

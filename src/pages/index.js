@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
@@ -54,7 +55,11 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" schemaMarkup={schema} image={data.site.siteMetadata.image} />
+      <SEO
+        title="Home"
+        schemaMarkup={schema}
+        image={data.site.siteMetadata.image}
+      />
 
       <section className="home">
         <div className="flex-space-between">
@@ -66,19 +71,16 @@ const IndexPage = () => {
             <h1 className="hidden">
               Shopify and Web Development for Women Entrepreneurs
             </h1>
-            <a
-              href="#services"
+            <OutboundLink
+              href="https://hanadrdla.ck.page/prospective-client-packet"
+              target="_blank"
+              rel="noreferrer"
+              alt="Prospective Client Packet "
+              aria-label="Download my Prospective Client Packet"
               className="btn btn-purple"
-              onClick={e => {
-                trackCustomEvent({
-                  category: "Custom Button",
-                  action: "Click",
-                  label: "Home Resources",
-                })
-              }}
             >
-              See how I do it
-            </a>
+              Let's work together
+            </OutboundLink>
           </div>
           <div className="hero-flex-2">
             <Img
