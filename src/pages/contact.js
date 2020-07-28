@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Socials from "../components/socials"
@@ -23,53 +23,8 @@ const ContactPage = () => {
   const [site, setSite] = useState("")
   const [msg, setMsg] = useState("")
 
-  useEffect(() => {
-    console.log(name)
-  }, [name])
-
   var verifyCallback = function (response) {
     setVerify(true)
-  }
-
-  const handleSubmit = e => {
-    e.preventDefault()
-
-    console.log(name, email, msg)
-
-    if (verify) {
-      const data = {
-        name: name,
-        email: email,
-        website: site,
-        message: msg,
-      }
-
-      const message = `<h2> From: ${name} </h2>
-      <h3> Email: ${email} </h3>
-      <h3> Website: ${site} </h3>
-      <p> ${msg} </p>`
-
-      console.log(message)
-
-      // const formData = new FormData()
-
-      // for (const name in data) {
-      //   formData.append(name, data[name])
-      // }
-
-      fetch(
-        "https://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943",
-        {
-          method: "post",
-          headers: {
-            // "Content-Type": "multipart/form-data",
-            "Content-Type": "text/html",
-          },
-          // body: formData,
-          body: message,
-        }
-      )
-    }
   }
 
   return (
@@ -97,7 +52,7 @@ const ContactPage = () => {
                   aria-label="Download my Prospective Client Packet"
                   className="h3"
                 >
-                  Prospective Client Packet
+                  Prospective Client Packet.
                 </OutboundLink>
               </h3>
             </div>
@@ -109,10 +64,10 @@ const ContactPage = () => {
           <div className="hero-flex-2">
             <div className="contact-form">
               <form
-                // action="http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943"
-                // method="POST"
-                // encType="multipart/form-data"
-                onSubmit={handleSubmit}
+                action="http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943"
+                method="POST"
+                encType="multipart/form-data"
+                // onSubmit={handleSubmit}
               >
                 <input
                   type="text"
@@ -153,7 +108,6 @@ const ContactPage = () => {
                 <Recaptcha
                   sitekey="6LeUN7cZAAAAAJDLy7meD3oh7SHn6Q-SvxJsyAbg"
                   render="explicit"
-                  // onloadCallback={callback}
                   verifyCallback={verifyCallback}
                 />
                 <input
