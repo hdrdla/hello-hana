@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Socials from "../components/socials"
@@ -23,6 +23,10 @@ const ContactPage = () => {
   const [site, setSite] = useState("")
   const [msg, setMsg] = useState("")
 
+  useEffect(() => {
+    console.log(name)
+  }, [name])
+
   var verifyCallback = function (response) {
     setVerify(true)
   }
@@ -30,27 +34,39 @@ const ContactPage = () => {
   const handleSubmit = e => {
     e.preventDefault()
 
+    console.log(name, email, msg)
+
     if (verify) {
       const data = {
-        Name: name,
-        Email: email,
-        Website: site,
-        Message: msg,
+        name: name,
+        email: email,
+        website: site,
+        message: msg,
       }
-      const formData = new FormData()
 
-      for (const name in data) {
-        formData.append(name, data[name])
-      }
+      const message = `<h2> From: ${name} </h2>
+      <h3> Email: ${email} </h3>
+      <h3> Website: ${site} </h3>
+      <p> ${msg} </p>`
+
+      console.log(message)
+
+      // const formData = new FormData()
+
+      // for (const name in data) {
+      //   formData.append(name, data[name])
+      // }
 
       fetch(
         "https://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943",
         {
           method: "post",
           headers: {
-            "Content-Type": "multipart/form-data",
+            // "Content-Type": "multipart/form-data",
+            "Content-Type": "text/html",
           },
-          body: formData,
+          // body: formData,
+          body: message,
         }
       )
     }
@@ -81,7 +97,7 @@ const ContactPage = () => {
                   aria-label="Download my Prospective Client Packet"
                   className="h3"
                 >
-                  Prospective Client Packet.
+                  Prospective Client Packet
                 </OutboundLink>
               </h3>
             </div>
@@ -104,7 +120,7 @@ const ContactPage = () => {
                   id="fullName"
                   placeholder="Your Name"
                   value={name}
-                  onChange={e => setName(e.value)}
+                  onChange={e => setName(e.target.value)}
                   required
                 />
                 <input
@@ -113,7 +129,7 @@ const ContactPage = () => {
                   id="email"
                   placeholder="Your Email"
                   value={email}
-                  onChange={e => setEmail(e.value)}
+                  onChange={e => setEmail(e.target.value)}
                   required
                 />
                 <input
@@ -122,7 +138,7 @@ const ContactPage = () => {
                   id="website"
                   placeholder="Your Website (if you have one)"
                   value={site}
-                  onChange={e => setSite(e.value)}
+                  onChange={e => setSite(e.target.value)}
                 />
                 <textarea
                   type="text"
@@ -130,12 +146,12 @@ const ContactPage = () => {
                   id="message"
                   placeholder="Tell me about your project"
                   value={msg}
-                  onChange={e => setMsg(e.value)}
+                  onChange={e => setMsg(e.target.value)}
                   required
                 ></textarea>
                 <p>Please detail your needs, budget and timeline.</p>
                 <Recaptcha
-                  sitekey="6LdVyrYZAAAAAEF_batl8M0o2BgDFzrML90p7M6B"
+                  sitekey="6LeUN7cZAAAAAJDLy7meD3oh7SHn6Q-SvxJsyAbg"
                   render="explicit"
                   // onloadCallback={callback}
                   verifyCallback={verifyCallback}
