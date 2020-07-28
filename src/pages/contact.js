@@ -40,22 +40,19 @@ const ContactPage = () => {
             <p className="pad-bottom">
               Tell me about the project you have in mind and I'll get back to
               you within 48 hours.
+              <br />
+              <br />
+              Or, get the&nbsp;
+              <OutboundLink
+                href="https://hanadrdla.ck.page/prospective-client-packet"
+                target="_blank"
+                rel="noreferrer"
+                alt="Prospective Client Packet "
+                aria-label="Download my Prospective Client Packet"
+              >
+                Prospective Client Packet.
+              </OutboundLink>
             </p>
-            <div className="pad-bottom">
-              <h3 className="underline ul-purple">
-                Get the&nbsp;
-                <OutboundLink
-                  href="https://hanadrdla.ck.page/prospective-client-packet"
-                  target="_blank"
-                  rel="noreferrer"
-                  alt="Prospective Client Packet "
-                  aria-label="Download my Prospective Client Packet"
-                  className="h3"
-                >
-                  Prospective Client Packet.
-                </OutboundLink>
-              </h3>
-            </div>
 
             <h3 className="underline ul-yellow">Stay in Touch</h3>
             <Socials />
@@ -104,7 +101,7 @@ const ContactPage = () => {
                   onChange={e => setMsg(e.target.value)}
                   required
                 ></textarea>
-                <p>Please detail your needs, budget and timeline.</p>
+                <p>Please detail your needs, budget and timeline</p>
                 <Recaptcha
                   sitekey="6LeUN7cZAAAAAJDLy7meD3oh7SHn6Q-SvxJsyAbg"
                   render="explicit"

@@ -14,13 +14,13 @@ export const Socials = () => (
       <FontAwesomeIcon icon={["fab", "facebook-f"]} />
     </OutboundLink>
     <OutboundLink
-      href="https://www.linkedin.com/in/hdrdla/"
+      href="https://www.instagram.com/hanerdoo/"
       target="_blank"
       rel="noreferrer"
-      alt="LinkedIn "
-      aria-label="Visit my LinkedIn profile"
+      alt="Instagram "
+      aria-label="Visit my Instagram profile"
     >
-      <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
+      <FontAwesomeIcon icon={["fab", "instagram"]} />
     </OutboundLink>
     <OutboundLink
       href="https://dribbble.com/hdrdla"
@@ -32,6 +32,15 @@ export const Socials = () => (
       <FontAwesomeIcon icon={["fab", "dribbble"]} />
     </OutboundLink>
     <OutboundLink
+      href="https://www.linkedin.com/in/hdrdla/"
+      target="_blank"
+      rel="noreferrer"
+      alt="LinkedIn "
+      aria-label="Visit my LinkedIn profile"
+    >
+      <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
+    </OutboundLink>
+    <OutboundLink
       href="https://twitter.com/hdrdla"
       target="_blank"
       rel="noreferrer"
@@ -40,15 +49,7 @@ export const Socials = () => (
     >
       <FontAwesomeIcon icon={["fab", "twitter"]} />
     </OutboundLink>
-    <OutboundLink
-      href="https://www.instagram.com/hanerdoo/"
-      target="_blank"
-      rel="noreferrer"
-      alt="Instagram "
-      aria-label="Visit my Instagram profile"
-    >
-      <FontAwesomeIcon icon={["fab", "instagram"]} />
-    </OutboundLink>
+
     {/*<OutboundLink href="https://www.pinterest.com/hanerdoo/" target="_blank" rel="noreferrer" alt="Visit my Pinterest profile"><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></OutboundLink>*/}
   </div>
 )
