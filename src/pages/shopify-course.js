@@ -7,8 +7,6 @@ import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ShopifyCoursePage = () => {
-
-
   useEffect(() => {
     const script = document.createElement("script")
     script.type = "application/javascript"
@@ -312,10 +310,10 @@ const ShopifyCoursePage = () => {
               </label>
               <div className="content">
                 <p>
-                  Shopify is built for e-commerce. It has integrations for
-                  shipping, email marketing, advertising, and many third-party
-                  services. It's a service that is continuously improving and
-                  investing it is users to help them succeed.
+                  Shopify is built for <nobr>e-commerce.</nobr> It has
+                  integrations for shipping, email marketing, advertising, and
+                  many third-party services. It's a service that is continuously
+                  improving and investing it is users to help them succeed.
                 </p>
               </div>
             </li>

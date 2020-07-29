@@ -96,7 +96,7 @@ const IndexPage = () => {
       <section id="services">
         <h2 className="center">Websites that Convert</h2>
         <div className="flex-space-between home">
-          <div className="box box-purple">
+          <div className="box box-purple box-home">
             <div className="box-content">
               <h3>Website Design & Development</h3>
               <p>
@@ -121,7 +121,7 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <div className="box box-blue">
+          <div className="box box-blue box-home">
             <div className="box-content">
               <h3>Shopify Design & Store Setup</h3>
               <p>
@@ -146,7 +146,7 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <div className="box box-yellow">
+          <div className="box box-yellow box-home">
             <div className="box-content">
               <h3>DIY Resources: Learn & Build</h3>
               <p>

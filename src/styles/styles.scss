@@ -383,7 +383,7 @@ a.btn {
   .h3,
   button,
   a.btn {
-    font-size: 2.5rem;
+    font-size: 2.45rem;
   }
 }
 
@@ -434,6 +434,7 @@ a:focus,
 @media #{$mobile} {
   .btn {
     width: 90%;
+    padding: 20px 30px;
   }
 }
 .btn.bg-trans {
@@ -668,7 +669,7 @@ header {
   margin: 2rem 0;
 }
 
-.home .box h3 {
+.home .box-home h3 {
   width: 80%;
 }
 
@@ -1420,7 +1421,7 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
 }
 
 .accordion h4 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .accordion.content hr {
