@@ -45,11 +45,6 @@ const Header = () => {
     <div>
       <header>
         <Helmet>
-          {/* <script
-            async
-            data-uid="0705839d87"
-            src="https://hanadrdla.ck.page/0705839d87/index.js"
-          ></script> */}
           <script src="/path/to/flickity.pkgd.min.js"></script>
           <script
             async
@@ -61,6 +56,10 @@ const Header = () => {
             src="https://sdki.truepush.com/sdk/v2.0.2/app.js"
             async
           ></script>
+          <meta
+            name="p:domain_verify"
+            content="0974d7fe5014df68fab4e62ed3a652d7"
+          />
         </Helmet>
 
         <div className="navigation-bar">
@@ -93,6 +92,9 @@ const Header = () => {
                   <Link to="/shopify-course">Shopify Course</Link>
                 </li>
                 <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
                   <Link
                     to="/contact"
                     className="btn-contact"
@@ -121,7 +123,7 @@ const Header = () => {
 
         <span className="grid-v">
           <span className="vertical-line grid-v-1"></span>
-          <span className="vertical-line grid-v-2"></span>
+          {/*<span className="vertical-line grid-v-2"></span>*/}
           <span className="vertical-line grid-v-3"></span>
         </span>
       </header>

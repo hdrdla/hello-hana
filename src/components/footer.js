@@ -43,6 +43,9 @@ const Footer = () => (
           <li>
             <Link to="/shopify-course">Shopify Course</Link>
           </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
         <br />
 
