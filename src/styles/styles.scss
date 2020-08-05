@@ -1533,7 +1533,7 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
     @include underline-text(lighten($color-secondary, 5%));
   }
   p {
-    line-height: 200%;
+    line-height: 150%;
     padding-bottom: 2rem;
   }
   li {
@@ -1544,6 +1544,9 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
 
 .blog-feature-image {
   max-width: 40rem;
+  width: 100%;
+  margin-right: 3rem !important;
+  display: inline-block;
 }
 
 /*

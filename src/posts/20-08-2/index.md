@@ -1,7 +1,7 @@
 ---
 path: "/blog/shopify-vs-etsy-for-ecommerce-businesses"
 title: "Shopify vs. Etsy - Which one should I use for my business?"
-date: "2020-08-11"
+date: "2020-08-06"
 published: false
 ---
 
@@ -45,6 +45,6 @@ Shopify may be the better solution if you want full control over the look and fe
 
 How about both? Etsy can be a great place to expose your brand to a large audience. However, as you learned above, your product may appear in a search with 100,000 results and you don't want to compete on price. The best solution would be to drive traffic from marketplace visitors to your website where customers can better understand your brand and offerings.
 
-If you want to start your business on Shopify and need help getting started, browse through the articles on my blogor contact me if you're in need of <a rel="noreferrer noopener" href="https://hanadrdla.com/services" target="_blank"> Shopify development services</a>.
+If you want to start your business on Shopify and need help getting started, browse through the articles on my blog or contact me if you're in need of <a rel="noreferrer noopener" href="https://hanadrdla.com/services" target="_blank"> Shopify development services</a>.
 
 Thanks for reading! If you'd like these articles in a quick, easy to digest format, <a rel="noreferrer noopener" href="https://instagram.com/hanerdoo" target="_blank">see my Instagram.

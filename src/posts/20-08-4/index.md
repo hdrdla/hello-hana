@@ -1,7 +1,7 @@
 ---
 path: "/blog/pinterest-for-ecommerce-marketing"
 title: "Using Pinterest as an E-Commerce Marketing Tool"
-date: "2020-08-25"
+date: "2020-08-13"
 published: false
 ---
 

@@ -18,7 +18,7 @@ const BlogPage = () => {
             id
             frontmatter {
               title
-              date
+              date(formatString: "MMMM DD, YYYY")
               path
               featuredImage {
                 childImageSharp {
@@ -43,6 +43,17 @@ const BlogPage = () => {
           }
         }
       }
+      blog2: file(
+        relativePath: {
+          eq: "Shopify-vs-etsy-which-one-is-better-for-ecommerce.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -54,7 +65,7 @@ const BlogPage = () => {
           <h1>Welcome to the blog!</h1>
           <br />
           <p>
-            Stay tuned every Tuesday for a new post. <br />
+            Stay tuned every Tuesday and Thursday for a new post. <br />
             If you'd like to read these in a visual format, pop over to my&nbsp;
             <a
               href="https://www.instagram.com/hanerdoo/"
@@ -76,19 +87,26 @@ const BlogPage = () => {
               alt="What to expect from Shopify in 2020"
             />
           </Link>
+
+          <Link to="/blog/shopify-vs-etsy-for-ecommerce-businesses">
+            <Img
+              fluid={data.blog2.childImageSharp.fluid}
+              className="blog-feature-image"
+              alt="Shopify vs. Etsy: Which one is better for e-commerce?"
+            />
+          </Link>
         </div>
         {/*}
-          <ul>
-            {data.allMarkdownRemark.edges.map(post => (
-              <li>
-                <Link to={post.node.frontmatter.path} key={post.node.id}>
-                  {post.node.frontmatter.title}
-                </Link>
-                {post.node.frontmatter.date}
-              </li>
-            ))}
-          </ul>
-            */}
+        <ul>
+          {data.allMarkdownRemark.edges.map(post => (
+            <li>
+              <Link to={post.node.frontmatter.path} key={post.node.id}>
+                {post.node.frontmatter.title}
+              </Link>
+              {post.node.frontmatter.date}
+            </li>
+          ))}
+          </ul> */}
       </section>
     </Layout>
   )
