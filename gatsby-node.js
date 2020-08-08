@@ -7,11 +7,23 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
-            html
+            body
             id
+            frontmatter {
+              path
+              title
+            }
+          }
+          next {
+            frontmatter {
+              path
+              title
+            }
+          }
+          previous {
             frontmatter {
               path
               title
@@ -25,10 +37,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(res.errors)
     }
 
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    res.data.allMdx.edges.forEach(({ node, next, previous }) => {
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,
+        context: {
+          next,
+          previous,
+        },
       })
     })
   })

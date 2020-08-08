@@ -2,6 +2,7 @@
 path: /blog/what-features-are-coming-to-shopify-in-2020
 title: What Features are Coming to Shopify in late 2020?
 date: "2020-08-04"
+tags: shopify
 featuredImage: 0.jpeg
 published: true
 ---
@@ -85,5 +86,3 @@ Secondly, improve image editing tools. Product images can easily be cropped to d
 Lastly, dynamic variants to allow cost to be calculated by weight or size. A past client of mine has a bulk food store and cannot allow her customers to input the exact amount they'd like to purchase. This could be applicable if you were ordering flooring, wallpaper, or anything that needs to be measured.
 
 There were a few other announcements and updates that I didn't mention. You can watch the full replay of Shopify's Reunite <a href="https://youtu.be/Ezewj3Umgfg" target="_blank" rel="noreferrer noopener" aria-label="Shopify's Reunite video conference (opens in a new tab)">here on YouTube</a>.
-
-What other features would you like to see Shopify offer? Let me know on <a href="https://www.instagram.com/hanerdoo/" target="_blank" rel="noreferrer noopener" aria-label="Hana's Instagram">my Instagram</a>.

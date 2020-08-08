@@ -7,13 +7,13 @@ published: false
 
 If you're just thinking about starting to sell online, you may be wondering about which e-commerce platform to use. What's the difference really and how will it affect your sales and growth? Or you may already be an Etsy seller and want to better understand if you should have your own website to sell on too. Today we'll compare <a href="https://www.shopify.com/" target="_blank" rel="noreferrer noopener" aria-label="Shopify (opens in a new tab)">Shopify</a> and <a href="https://www.etsy.com/" target="_blank" rel="noreferrer noopener" aria-label="Etsy (opens in a new tab)">Etsy</a> to understand which one is better for you depending on your business goals.
 
-## A Full Comparson of Shopify & Etsy
+## A Full Comparison of Shopify & Etsy
 
 ### Marketplace vs. Web Store
 
-<a rel="noreferrer noopener" aria-label="Etsy (opens in a new tab)" href="https://www.etsy.com/" target="_blank">Etsy</a> is a marketplace meaning that you share a virtual selling space with thousands of other stores. <a rel="noreferrer noopener" aria-label="A search of &quot;leather wallet&quot; (opens in a new tab)" href="https://www.etsy.com/search?q=leather%20wallet" target="_blank">A search of "leather wallet"</a> will bring up 100,000 results, all listings from different stores on Etsy. Etsy has guidelines that allow stores to sell only handmade goods, vintage items and craft supplies. If you have designed something, and worked with a manufacturer to produce it, this is also allowed as long as you specify who you collaborated with. So if you are selling something that doesn't fit into one of these categories, then Etsy is not an option for you. The great thing about Etsy is that setting up a store is incredibly easy so you can open up shop very quickly.
+Etsy is a marketplace meaning that you share a virtual selling space with thousands of other stores. <a rel="noreferrer noopener" aria-label="A search of &quot;leather wallet&quot; (opens in a new tab)" href="https://www.etsy.com/search?q=leather%20wallet" target="_blank">A search of "leather wallet"</a> will bring up 100,000 results, all listings from different stores on Etsy. Etsy has guidelines that allow stores to sell only handmade goods, vintage items and craft supplies. If you have designed something, and worked with a manufacturer to produce it, this is also allowed as long as you specify who you collaborated with. So if you are selling something that doesn't fit into one of these categories, then Etsy is not an option for you. The great thing about Etsy is that setting up a store is incredibly easy so you can open up shop very quickly.
 
-<a rel="noreferrer noopener" aria-label="Shopify (opens in a new tab)" href="https://www.shopify.com/" target="_blank">Shopify</a> is an e-commerce platform that allows you to easily set up a store on your own domain, while they provide the technical infrastructure of the online store. Your store is not connected to anyone else's, and there are very few restrictions on what you can sell, but it becomes your responsibility to drive traffic to the website. Store owners must build their store interfaces themselves but with the use of Shopify themes, this is quite intuative and easy.
+Shopify is an e-commerce platform that allows you to easily set up a store on your own domain, while they provide the technical infrastructure of the online store. Your store is not connected to anyone else's, and there are very few restrictions on what you can sell, but it becomes your responsibility to drive traffic to the website. Store owners must build their store interfaces themselves but with the use of Shopify themes, this is quite intuative and easy.
 
 ### Driving Traffic to your Store
 
@@ -47,4 +47,4 @@ How about both? Etsy can be a great place to expose your brand to a large audien
 
 If you want to start your business on Shopify and need help getting started, browse through the articles on my blog or contact me if you're in need of <a rel="noreferrer noopener" href="https://hanadrdla.com/services" target="_blank"> Shopify development services</a>.
 
-Thanks for reading! If you'd like these articles in a quick, easy to digest format, <a rel="noreferrer noopener" href="https://instagram.com/hanerdoo" target="_blank">see my Instagram.
+Thanks for reading! If you'd like these articles in a quick, easy to digest format, <a rel="noreferrer noopener" href="https://instagram.com/hanerdoo" target="_blank">see my Instagram</a>.

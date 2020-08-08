@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query IndexQuery {
-      allMarkdownRemark(
+      allMdx(
         limit: 10
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
@@ -98,7 +98,7 @@ const BlogPage = () => {
         </div>
         {/*}
         <ul>
-          {data.allMarkdownRemark.edges.map(post => (
+          {data.allMdx.edges.map(post => (
             <li>
               <Link to={post.node.frontmatter.path} key={post.node.id}>
                 {post.node.frontmatter.title}
@@ -106,10 +106,18 @@ const BlogPage = () => {
               {post.node.frontmatter.date}
             </li>
           ))}
-          </ul> */}
+          </ul>*/}
       </section>
     </Layout>
   )
 }
 
 export default BlogPage
+
+/*featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }*/

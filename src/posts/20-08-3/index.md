@@ -61,5 +61,3 @@ Here are things you want to consider in your emails:
 I hope it's now clear that having your customers' emails allows you direct contact with an audience that is already intereted in your brand. This will make driving traffic to your website much easier during special events, and allow you to lower your customer acquisition cost.
 
 A final point to show you the value of your email list: If your business really takes off and you want to sell the business or are looking for investors, they will likely ask you how big your email list is because they want to know how many people you have direct access to through their inbox.
-
-Thanks for reading!

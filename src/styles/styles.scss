@@ -314,7 +314,6 @@ h3,
 h4 {
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 2rem;
 }
 
 a,
@@ -333,6 +332,10 @@ p {
 p,
 li {
   font-size: 2rem;
+}
+
+strong {
+  font-weight: 700;
 }
 
 .large,
@@ -1513,16 +1516,30 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
 
 /* BLOG */
 
-.blog {
-  max-width: 700px;
+article {
+  max-width: 900px;
   margin: 5% auto;
-  @media #{$mobile} {
-    width: 90%;
+  padding: 0 5%;
+  h1 {
+    font-size: 4.5rem;
+    @media #{$desktop} {
+      font-size: 4rem;
+    }
+    @media #{$mobile} {
+      font-size: 3.5rem;
+    }
   }
   h2 {
+    font-size: 4rem;
     padding-bottom: 0;
     @include underline-text(lighten($color-tertiary, 5%));
     margin-bottom: 2rem;
+    @media #{$desktop} {
+      font-size: 3.5rem;
+    }
+    @media #{$mobile} {
+      font-size: 2.8rem;
+    }
   }
   h3 {
     margin: 2rem 0;
@@ -1530,16 +1547,30 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
   }
   h4 {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     @include underline-text(lighten($color-secondary, 5%));
   }
   p {
     line-height: 150%;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    font-weight: normal;
+  }
+  a {
+    font-weight: normal;
   }
   li {
     line-height: 110%;
     padding-bottom: 2rem;
   }
+  code {
+    background-color: $color-medium;
+  }
+}
+p > code {
+  background: $color-dark;
+  color: $color-tertiary;
+  padding: 0.2em;
+  border-radius: 3px;
 }
 
 .blog-feature-image {
@@ -1547,6 +1578,10 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"] {
   width: 100%;
   margin-right: 3rem !important;
   display: inline-block;
+}
+
+.blog-directions a {
+  text-decoration: none;
 }
 
 /*

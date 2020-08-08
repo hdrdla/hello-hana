@@ -313,7 +313,7 @@ const ShopifyCoursePage = () => {
                   Shopify is built for <nobr>e-commerce.</nobr> It has
                   integrations for shipping, email marketing, advertising, and
                   many third-party services. It's a service that is continuously
-                  improving and investing it is users to help them succeed.
+                  improving and investing it is merchants to help them succeed.
                 </p>
               </div>
             </li>
@@ -348,8 +348,8 @@ const ShopifyCoursePage = () => {
               <div className="content">
                 <p>
                   The course will be launched in late 2020. Follow the lessons
-                  at your own pace and stay in touch with other students on a
-                  private Facebook group.
+                  at your own pace and ask the instructor questions during
+                  office hours.
                 </p>
               </div>
             </li>
