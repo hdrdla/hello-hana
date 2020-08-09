@@ -2,8 +2,7 @@
 path: /blog/what-features-are-coming-to-shopify-in-2020
 title: What Features are Coming to Shopify in late 2020?
 date: "2020-08-04"
-tags: shopify
-featuredImage: 0.jpeg
+featuredImage: shopify-features-2020.jpg
 published: true
 ---
 
@@ -14,6 +13,8 @@ Shopify's annual conference, Reunite, was hosted online this year due to COVID-1
 Let's go through some of the key announcements they made, as well as some features that were released earlier in the year that you may have missed.
 
 ## What you can expect
+
+<br/>
 
 ### Sections enabled on all pages
 

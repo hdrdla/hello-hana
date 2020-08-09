@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Bio from "../components/bio"
+import Socials from "../components/socials"
 
 export default function BlogPost({ data, pageContext, location }) {
   const post = data.mdx
@@ -16,7 +18,8 @@ export default function BlogPost({ data, pageContext, location }) {
       />
       <article>
         <h1 className="center">{post.frontmatter.title}</h1>
-        <p className="center">{post.frontmatter.date}</p>
+        <p className="center blog-date">{post.frontmatter.date}</p>
+        <Bio />
         <MDXRenderer>{post.body}</MDXRenderer>
       </article>
 
@@ -27,7 +30,7 @@ export default function BlogPost({ data, pageContext, location }) {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: `0 3rem`,
+            padding: `0 3rem 5rem 3rem`,
           }}
         >
           <li

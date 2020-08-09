@@ -48,13 +48,20 @@ const Footer = () => (
           </li>
         </ul>
         <br />
+      </div>
 
+      <div>
         <p>Let's be friends</p>
         <Socials />
       </div>
 
       <div className="footer-news">
         <p>Find out when I launch templates, courses & free resources</p>
+        <script
+          async
+          data-uid="49b955eab3"
+          src="https://hanadrdla.ck.page/49b955eab3/index.js"
+        ></script>
         <Helmet>
           <script
             async
@@ -62,11 +69,6 @@ const Footer = () => (
             src="https://hanadrdla.ck.page/49b955eab3/index.js"
           ></script>
         </Helmet>
-        <script
-          async
-          data-uid="49b955eab3"
-          src="https://hanadrdla.ck.page/49b955eab3/index.js"
-        ></script>
       </div>
     </div>
 

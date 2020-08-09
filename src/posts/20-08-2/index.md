@@ -2,6 +2,7 @@
 path: "/blog/shopify-vs-etsy-for-ecommerce-businesses"
 title: "Shopify vs. Etsy - Which one should I use for my business?"
 date: "2020-08-06"
+featuredImage: shopify-vs-etsy-which-one-is-better-for-ecommerce.jpg
 published: false
 ---
 

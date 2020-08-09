@@ -20,13 +20,6 @@ const BlogPage = () => {
               title
               date(formatString: "MMMM DD, YYYY")
               path
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
             }
           }
         }
@@ -65,36 +58,27 @@ const BlogPage = () => {
           <h1>Welcome to the blog!</h1>
           <br />
           <p>
-            Stay tuned every Tuesday and Thursday for a new post. <br />
-            If you'd like to read these in a visual format, pop over to my&nbsp;
-            <a
-              href="https://www.instagram.com/hanerdoo/"
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="Hana's Instagram"
-            >
-              Instagram
-            </a>
-            .
+            Check back every Tuesday and Thursday for a new post. <br />
           </p>
         </div>
         <br />
-        <div>
-          <Link to="/blog/what-features-are-coming-to-shopify-in-2020">
-            <Img
-              fluid={data.blog1.childImageSharp.fluid}
-              className="blog-feature-image"
-              alt="What to expect from Shopify in 2020"
-            />
-          </Link>
-
-          <Link to="/blog/shopify-vs-etsy-for-ecommerce-businesses">
-            <Img
-              fluid={data.blog2.childImageSharp.fluid}
-              className="blog-feature-image"
-              alt="Shopify vs. Etsy: Which one is better for e-commerce?"
-            />
-          </Link>
+        <div className="flex-space-between">
+          <div className="blog-feature-image">
+            <Link to="/blog/what-features-are-coming-to-shopify-in-2020">
+              <Img
+                fluid={data.blog1.childImageSharp.fluid}
+                alt="What to expect from Shopify in 2020"
+              />
+            </Link>
+          </div>
+          <div className="blog-feature-image">
+            <Link to="/blog/shopify-vs-etsy-for-ecommerce-businesses">
+              <Img
+                fluid={data.blog2.childImageSharp.fluid}
+                alt="Shopify vs. Etsy: Which one is better for e-commerce?"
+              />
+            </Link>
+          </div>
         </div>
         {/*}
         <ul>
@@ -115,9 +99,9 @@ const BlogPage = () => {
 export default BlogPage
 
 /*featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }*/
+  childImageSharp {
+    fluid(maxWidth: 800) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}*/

@@ -51,10 +51,10 @@ Nowadays there are more lists you can have than just email. There’s direct mai
 
 Here are things you want to consider in your emails:
 
-- Your brand voice: How do you speak with your audience on your website, social media, and through emails? Is the tone casual, or serious? This is something you want to keep consistent as part of your branding
-- Be a good guest: Remember that you are in someone's personal space (inbox) and they can kick you out at any moment by unsubscribing. Don't be annoying by blasting them with an email every day, and bring something to the table.
-- Offer value: Your customers are not a cash machine. Remember, **Your customers do not exist to buy from you. You exist to help them.** What value can you offer them in these emails, or how can you further connect them to the brand's values and mission.
-- Be vulnerable: Open up to your customers about the process of your work and of becoming a better brand. They will appreciate your honestly and it will create a more personal connection with your customers.
+- **Your brand voice:** How do you speak with your audience on your website, social media, and through emails? Is the tone casual, or serious? This is something you want to keep consistent as part of your branding
+- **Be a good guest:** Remember that you are in someone's personal space (inbox) and they can kick you out at any moment by unsubscribing. Don't be annoying by blasting them with an email every day, and bring something to the table.
+- **Offer value:** Your customers are not a cash machine. Remember, **Your customers do not exist to buy from you. You exist to help them.** What value can you offer them in these emails, or how can you further connect them to the brand's values and mission.
+- **Be vulnerable:** Open up to your customers about the process of your work and of becoming a better brand. They will appreciate your honestly and it will create a more personal connection with your customers.
 
 ### Conclusion
 
