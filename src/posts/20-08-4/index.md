@@ -2,6 +2,7 @@
 path: "/blog/pinterest-for-ecommerce-marketing"
 title: "Using Pinterest as an E-Commerce Marketing Tool"
 date: "2020-08-13"
+featuredImage: ./pinterest-for-shopify-ecommerce-marketing.jpg
 published: false
 ---
 

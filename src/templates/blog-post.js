@@ -4,7 +4,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from "../components/bio"
-import Socials from "../components/socials"
 
 export default function BlogPost({ data, pageContext, location }) {
   const post = data.mdx

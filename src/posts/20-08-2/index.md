@@ -2,8 +2,8 @@
 path: "/blog/shopify-vs-etsy-for-ecommerce-businesses"
 title: "Shopify vs. Etsy - Which one should I use for my business?"
 date: "2020-08-06"
-featuredImage: shopify-vs-etsy-which-one-is-better-for-ecommerce.jpg
-published: false
+featuredImage: ./shopify-vs-etsy-which-one-is-better-for-ecommerce.jpg
+published: true
 ---
 
 If you're just thinking about starting to sell online, you may be wondering about which e-commerce platform to use. What's the difference really and how will it affect your sales and growth? Or you may already be an Etsy seller and want to better understand if you should have your own website to sell on too. Today we'll compare <a href="https://www.shopify.com/" target="_blank" rel="noreferrer noopener" aria-label="Shopify (opens in a new tab)">Shopify</a> and <a href="https://www.etsy.com/" target="_blank" rel="noreferrer noopener" aria-label="Etsy (opens in a new tab)">Etsy</a> to understand which one is better for you depending on your business goals.

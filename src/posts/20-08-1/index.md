@@ -1,8 +1,10 @@
 ---
 path: /blog/what-features-are-coming-to-shopify-in-2020
 title: What Features are Coming to Shopify in late 2020?
-date: "2020-08-04"
-featuredImage: shopify-features-2020.jpg
+date: 2020-08-04
+featuredImage: ./shopify-features-2020.jpg
+category:
+  - Shopify
 published: true
 ---
 
