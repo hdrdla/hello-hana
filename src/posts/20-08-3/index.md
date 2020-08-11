@@ -1,9 +1,10 @@
 ---
-path: "/blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business"
-title: "Why your newsletter email list is the most valuable part of your Shopify business"
-date: "2020-08-11"
+path: /blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business
+title: Why your newsletter email list is the most valuable part of your Shopify business
+date: 2020-08-11
 featuredImage: ./newsletter-marketing-for-shopify.jpg
-published: false
+tags: ["Shopify, Shopify 101, Marketing"]
+published: true
 ---
 
 Visiting any e-commerce website today, you are likely to be bombarded with a popup asking for your email. Why are companies so eager to get into your inbox? Let's talk about the value of having a customer email list, how you can get customers' emails, and what you should do with that list.

@@ -1,8 +1,9 @@
 ---
-path: "/blog/shopify-vs-etsy-for-ecommerce-businesses"
-title: "Shopify vs. Etsy - Which one should I use for my business?"
-date: "2020-08-06"
+path: /blog/shopify-vs-etsy-for-ecommerce-businesses
+title: Shopify vs. Etsy - Which one should I use for my business?
+date: 2020-08-06
 featuredImage: ./shopify-vs-etsy-which-one-is-better-for-ecommerce.jpg
+tags: ["Shopify"]
 published: true
 ---
 
@@ -44,8 +45,6 @@ Knowing all this, which do I pick? Etsy may be the better solution if you want t
 
 Shopify may be the better solution if you want full control over the look and feel of your brand. Your brand may have a small audience already or you are prepared to focus on marketing to bring visitors to your website. You may have the need for powerful features on your website that will help you understand your customers and bring them back to your site for a second and third visit or until they make a purchase. Ultimately, if you want to build a strong business and brand, then Shopify is the platform for you.
 
-How about both? Etsy can be a great place to expose your brand to a large audience. However, as you learned above, your product may appear in a search with 100,000 results and you don't want to compete on price. The best solution would be to drive traffic from marketplace visitors to your website where customers can better understand your brand and offerings.
+How about both? Etsy can be a great place to expose your brand to a large audience. However, as you learned above, your product may appear in a search with 100,000 results and you don't want to compete on price. The best solution would be to drive traffic from marketplace visitors to your website where customers can better understand your brand and offerings. Try running both at the same time to benefit from both platforms.
 
 If you want to start your business on Shopify and need help getting started, browse through the articles on my blog or contact me if you're in need of <a rel="noreferrer noopener" href="https://hanadrdla.com/services" target="_blank"> Shopify development services</a>.
-
-Thanks for reading! If you'd like these articles in a quick, easy to digest format, <a rel="noreferrer noopener" href="https://instagram.com/hanerdoo" target="_blank">see my Instagram</a>.

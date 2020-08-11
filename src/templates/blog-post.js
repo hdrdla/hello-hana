@@ -4,6 +4,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from "../components/bio"
+import { Helmet } from "react-helmet"
+import Img from "gatsby-image"
 
 export default function BlogPost({ data, pageContext, location }) {
   const post = data.mdx
@@ -20,6 +22,30 @@ export default function BlogPost({ data, pageContext, location }) {
         <p className="center blog-date">{post.frontmatter.date}</p>
         <Bio />
         <MDXRenderer>{post.body}</MDXRenderer>
+        <div className="center">
+          <Img
+            fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
+            alt={post.frontmatter.title}
+            className="blog-feature-image-pinterest"
+          />
+        </div>
+        <div className="blog-newsletter">
+          <div className="page-divider"></div>
+          <h4>Want more?</h4>
+          <p>
+            Thanks for reading "{post.frontmatter.title}". Join my mailing list
+            to receive blog highlights, free resources, and for other exciting
+            updates.
+          </p>
+          <script
+            async
+            data-uid="1daea2840b"
+            src="https://hanadrdla.ck.page/1daea2840b/index.js"
+          ></script>
+          <p className="small">
+            I won't send you spam. Unsubscribe at any time.
+          </p>
+        </div>
       </article>
 
       <nav className="blog-directions">
@@ -60,6 +86,13 @@ export default function BlogPost({ data, pageContext, location }) {
           </li>
         </ul>
       </nav>
+      <Helmet>
+        <script
+          async
+          data-uid="1daea2840b"
+          src="https://hanadrdla.ck.page/1daea2840b/index.js"
+        ></script>
+      </Helmet>
     </Layout>
   )
 }
@@ -72,6 +105,13 @@ export const postQuery = graphql`
         path
         title
         date(formatString: "MMMM DD, YYYY")
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
     site {

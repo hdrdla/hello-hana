@@ -47,6 +47,15 @@ const BlogPage = () => {
           }
         }
       }
+      blog3: file(
+        relativePath: { eq: "newsletter-marketing-for-shopify.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -64,10 +73,10 @@ const BlogPage = () => {
         <br />
         <div className="flex-space-between">
           <div className="blog-feature-image">
-            <Link to="/blog/what-features-are-coming-to-shopify-in-2020">
+            <Link to="/blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business">
               <Img
-                fluid={data.blog1.childImageSharp.fluid}
-                alt="What to expect from Shopify in 2020"
+                fluid={data.blog3.childImageSharp.fluid}
+                alt="Why your newsletter email list is the most valuable part of your Shopify business"
               />
             </Link>
           </div>
@@ -79,11 +88,21 @@ const BlogPage = () => {
               />
             </Link>
           </div>
+
+          <div className="blog-feature-image">
+            <Link to="/blog/what-features-are-coming-to-shopify-in-2020">
+              <Img
+                fluid={data.blog1.childImageSharp.fluid}
+                alt="What to expect from Shopify in 2020"
+              />
+            </Link>
+          </div>
         </div>
         {/*}
         <ul>
           {data.allMdx.edges.map(post => (
             <li>
+            // I want the featured image here, linked to the post and with an alt tag of the title. I don't need the title and date listed like below, it was just for testing.
               <Link to={post.node.frontmatter.path} key={post.node.id}>
                 {post.node.frontmatter.title}
               </Link>

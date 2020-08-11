@@ -3,8 +3,7 @@ path: /blog/what-features-are-coming-to-shopify-in-2020
 title: What Features are Coming to Shopify in late 2020?
 date: 2020-08-04
 featuredImage: ./shopify-features-2020.jpg
-category:
-  - Shopify
+tags: ["Shopify"]
 published: true
 ---
 
@@ -58,7 +57,15 @@ Here are some more updates that happened in the past few months, that perhaps yo
 
 ### Shopify Capital
 
-Shopify Capital is a program that is helping small businesses access financing. The program offers zero-interest loans from $200 to $1,000,000 and does not consider credit history. They boast about a quick application process, quick funding, and repayment of loan through sales. This last point means that you return the funding as a percentage of your sales, making repayment so flexible and considerate of your business circumstances. This is available to merchants in the US, Canada, and UK. I've been asked by some, why Shopify would offer this. I believe that Shopify really cares about its merchants because if its merchants succeed, then so do they. It's also a way to get people onto the platform. Shopify's fee can be the deciding factor for many businesses, especially when compared to the free WooCommerce (although the features do not compare!), and offering this interest-free financing is an invitation to the platform. Once you're on the platform, you are paying Shopify anyways, so it will be interesting to see the outcomes of this program. Learn more about Shopify Capital <a href="https://www.shopify.com/capital" target="_blank" rel="noreferrer noopener" aria-label="Shopify Capital (opens in a new tab)">on its website here</a>.
+Shopify Capital is a program that is helping small businesses access financing. The program offers zero-interest _(sort of... explained below)_ loans from $200 to $1,000,000 and does not consider credit history. They boast about a quick application process, quick funding, and repayment of loan through sales. This is available to merchants in the US, Canada, and UK. Learn more about Shopify Capital <a href="https://www.shopify.com/capital" target="_blank" rel="noreferrer noopener" aria-label="Shopify Capital (opens in a new tab)">on its website here</a>.
+
+Initially, I thought that this program was a way for Shopify to get new merchants onto the platform and that Shopify really cared about the success of its users. How naive... After doing some more digging, I've discovered that they will be making a lot of money out of this.
+
+The way that the loans work is that you repay the amount with a percentage of your daily sales. Technically, the loans are interest free but you will pay back more than you borrowed. For example, borrow $12,000 and pay back $13,000. You pay it back as slowly or as fast as your sales come in.
+
+Who is eligible? Eligibility is determined based off your history on Shopify. You can only get a loan through the program if you have shown that your Shopify store has been profitable for some time. The loan amount offered to you builds up so you can borrow a larger amount each time.
+
+Borrowing money through Shopify Capital isn't cheap, that's for sure. The advantages are that there is no credit check, repayment is automated, and the repayment schedule is dependent on you making sales.
 
 ### Shopify Email
 
@@ -82,10 +89,13 @@ A new free theme was launched in the Theme Store. This theme is meant to help br
 
 Shopify offers such amazing e-commerce features. Afterall, e-commerce is what it's built for. But there are a few things I've run into that I can't believe aren't included.
 
-Firstly, product dimensions. I had a client who was selling art pieces on canvas. I was able to add the weight of each piece, but this was basically useless when using Canada Post's shipping calculator because the dimensions of the package were not considered at all. This means needing to calculate approximate package delivery charges for different sizes and destinations, rather than an automatic fair price being calculated and faster shipping process to benefit both the customer and seller.
+**Firstly,** product dimensions. I had a client who was selling art pieces on canvas. I was able to add the weight of each piece, but this was basically useless when using Canada Post's shipping calculator because the dimensions of the package were not considered at all. This means needing to calculate approximate package delivery charges for different sizes and destinations, rather than an automatic fair price being calculated and faster shipping process to benefit both the customer and seller.
 
-Secondly, improve image editing tools. Product images can easily be cropped to different aspect ratios. However, once it's cropped, you've lost the original image size. One feature I love about WordPress is that you can restore the original image, so nothing is lost from cropping. Another annoyance I have is the lack of the crop tool on the store editor. When uploading a hero image for example, sometimes the fit isn't quite right, and I need to crop the image on my computer and re-upload it. Then I end up with several copies of nearly the same image in my files and it can be difficult to keep track of which is which. There's also no way to delete an image from the image library on the editor. I need to visit my files in another window.
+_Updated August 11, 2020:_
+There is a new app, <a href="https://apps.shopify.com/smart-boxing-1" target="_blank" rel="noreferrer noopener" aria-label="Shopify's Reunite video conference (opens in a new tab)">Smart Boxing</a> that allows for dimensional shipping. Yay for app developers! _Still, it should be part of the Shopify platform..._
 
-Lastly, dynamic variants to allow cost to be calculated by weight or size. A past client of mine has a bulk food store and cannot allow her customers to input the exact amount they'd like to purchase. This could be applicable if you were ordering flooring, wallpaper, or anything that needs to be measured.
+**Secondly,** improve image editing tools. Product images can easily be cropped to different aspect ratios. However, once it's cropped, you've lost the original image size. One feature I love about WordPress is that you can restore the original image, so nothing is lost from cropping. Another annoyance I have is the lack of the crop tool on the store editor. When uploading a hero image for example, sometimes the fit isn't quite right, and I need to crop the image on my computer and re-upload it. Then I end up with several copies of nearly the same image in my files and it can be difficult to keep track of which is which. There's also no way to delete an image from the image library on the editor. I need to visit my files in another window.
+
+**Lastly,** dynamic variants to allow cost to be calculated by weight or size. A past client of mine has a bulk food store and cannot allow her customers to input the exact amount they'd like to purchase. This could be applicable if you were ordering flooring, wallpaper, or anything that needs to be measured.
 
 There were a few other announcements and updates that I didn't mention. You can watch the full replay of Shopify's Reunite <a href="https://youtu.be/Ezewj3Umgfg" target="_blank" rel="noreferrer noopener" aria-label="Shopify's Reunite video conference (opens in a new tab)">here on YouTube</a>.

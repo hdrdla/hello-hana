@@ -314,6 +314,7 @@ const ShopifyCoursePage = () => {
                   integrations for shipping, email marketing, advertising, and
                   many third-party services. It's a service that is continuously
                   improving and investing it is merchants to help them succeed.
+                  Perfect for product-based businesses!
                 </p>
               </div>
             </li>
