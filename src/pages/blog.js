@@ -37,9 +37,7 @@ const BlogPage = () => {
         }
       }
       blog2: file(
-        relativePath: {
-          eq: "Shopify-vs-etsy-which-one-is-better-for-ecommerce.jpg"
-        }
+        relativePath: { eq: "shopify-vs-etsy-which-one-is-better.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 800) {
