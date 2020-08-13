@@ -31,7 +31,7 @@ The most basic way of collecting emails is through a section on your Shopify sto
 
 If you like the popup, I would recommend putting a delay on it of 10 or more seconds, so that customers can decide if they like your products at first glance before choosing to close that little box. You can also set popups to occur straight away, and then later again when the visitor clicks to another page, or attempts to exit the window completely.
 
-Another email capturing method that I’ve seen to be very effective is a sort of popup that slides out from the side of the screen, and is a wheel that you can click to spin. On the wheel, you can see all the different things you could possibly win. This could include winning a discount, buy one get one free, or a free item. The key is that the person must put in their email to claim the prize. The reason that this is so effective is because people love gameification and they can clearly see what is available to win.
+Another email capturing method that I’ve seen to be very effective is a sort of popup that slides out from the side of the screen, and is a wheel that you can click to spin. On the wheel, you can see all the different things you could possibly win. This could include winning a discount, buy one get one free, or a free item. The key is that the person must put in their email to claim the prize. The reason that this is so effective is because people love gamification and they can clearly see what is available to win.
 
 A personal experience where I gave my email because of one of these wheels, was on <a rel="noreferrer noopener" href="https://www.freelanceratwork.co/" target="_blank">Freelancer At Work</a>. I spun their wheel and won "Buy 1 Get One Free", which resulted in me making a purchase for myself and a friend. I don't think I'm on their email list anymore, but I did make a purchase as a result of that wheel.
 
@@ -60,6 +60,6 @@ Here are things you want to consider in your emails:
 
 ### Conclusion
 
-I hope it's now clear that having your customers' emails allows you direct contact with an audience that is already intereted in your brand. This will make driving traffic to your website much easier during special events, and allow you to lower your customer acquisition cost.
+I hope it's now clear that having your customers' emails allows you direct contact with an audience that is already interested in your brand. This will make driving traffic to your website much easier during special events, and allow you to lower your customer acquisition cost.
 
 A final point to show you the value of your email list: If your business really takes off and you want to sell the business or are looking for investors, they will likely ask you how big your email list is because they want to know how many people you have direct access to through their inbox.

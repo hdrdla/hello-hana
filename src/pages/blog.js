@@ -9,7 +9,6 @@ const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query IndexQuery {
       allMdx(
-        limit: 10
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
       ) {
@@ -20,6 +19,13 @@ const BlogPage = () => {
               title
               date(formatString: "MMMM DD, YYYY")
               path
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
@@ -54,6 +60,15 @@ const BlogPage = () => {
           }
         }
       }
+      blog4: file(
+        relativePath: { eq: "pinterest-for-shopify-ecommerce-marketing.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -70,6 +85,14 @@ const BlogPage = () => {
         </div>
         <br />
         <div className="flex-space-between">
+          <div className="blog-feature-image">
+            <Link to="/blog/pinterest-for-ecommerce-marketing">
+              <Img
+                fluid={data.blog4.childImageSharp.fluid}
+                alt="Using Pinterest as an E-Commerce Marketing Tool"
+              />
+            </Link>
+          </div>
           <div className="blog-feature-image">
             <Link to="/blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business">
               <Img
@@ -105,6 +128,11 @@ const BlogPage = () => {
                 {post.node.frontmatter.title}
               </Link>
               {post.node.frontmatter.date}
+                        <Img
+            fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
+            alt={post.frontmatter.title}
+            className="blog-feature-image-pinterest"
+          />
             </li>
           ))}
           </ul>*/}

@@ -75,7 +75,7 @@ Other mailing services such as Klaviyo are still miles ahead, but Shopify Email 
 
 ### Gift Cards
 
-Gift cards have temporarily been made free on all plans. Previously they were only available on the \$79+ tier plan. This change is in efforts to support merchants who have been affected by the pandemic, who cannot provide their product or services at the moment. Think salons, or stores whos production lines have been disrupted. If you are a business that needs the help of gift card purchases right now, reach out to your customers and let them know how they can continue to support you during this time.
+Gift cards have temporarily been made free on all plans. Previously they were only available on the \$79+ tier plan. This change is in efforts to support merchants who have been affected by the pandemic, who cannot provide their product or services at the moment. Think salons, or stores whose production lines have been disrupted. If you are a business that needs the help of gift card purchases right now, reach out to your customers and let them know how they can continue to support you during this time.
 
 ### Tipping
 
@@ -87,7 +87,7 @@ A new free theme was launched in the Theme Store. This theme is meant to help br
 
 ## What I want to see
 
-Shopify offers such amazing e-commerce features. Afterall, e-commerce is what it's built for. But there are a few things I've run into that I can't believe aren't included.
+Shopify offers such amazing e-commerce features. After all, e-commerce is what it's built for. But there are a few things I've run into that I can't believe aren't included.
 
 **Firstly,** product dimensions. I had a client who was selling art pieces on canvas. I was able to add the weight of each piece, but this was basically useless when using Canada Post's shipping calculator because the dimensions of the package were not considered at all. This means needing to calculate approximate package delivery charges for different sizes and destinations, rather than an automatic fair price being calculated and faster shipping process to benefit both the customer and seller.
 

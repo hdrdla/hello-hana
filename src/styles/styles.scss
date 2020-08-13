@@ -717,7 +717,7 @@ header {
   text-decoration: none;
 }
 
-.box .price {
+.price {
   margin-top: 1rem;
   margin-bottom: -2rem;
   .dollar {
@@ -725,7 +725,7 @@ header {
   }
 }
 
-.box .accent {
+.accent {
   font-size: 1.4rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -1580,7 +1580,10 @@ article {
   }
   li {
     line-height: 110%;
-    padding-bottom: 2rem;
+    padding-bottom: 1.3rem;
+  }
+  ul {
+    margin-left: 2rem;
   }
   code {
     background-color: $color-medium;

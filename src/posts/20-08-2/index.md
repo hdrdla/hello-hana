@@ -15,7 +15,7 @@ If you're just thinking about starting to sell online, you may be wondering abou
 
 Etsy is a marketplace meaning that you share a virtual selling space with thousands of other stores. <a rel="noreferrer noopener" aria-label="A search of &quot;leather wallet&quot; (opens in a new tab)" href="https://www.etsy.com/search?q=leather%20wallet" target="_blank">A search of "leather wallet"</a> will bring up 100,000 results, all listings from different stores on Etsy. Etsy has guidelines that allow stores to sell only handmade goods, vintage items and craft supplies. If you have designed something, and worked with a manufacturer to produce it, this is also allowed as long as you specify who you collaborated with. So if you are selling something that doesn't fit into one of these categories, then Etsy is not an option for you. The great thing about Etsy is that setting up a store is incredibly easy so you can open up shop very quickly.
 
-Shopify is an e-commerce platform that allows you to easily set up a store on your own domain, while they provide the technical infrastructure of the online store. Your store is not connected to anyone else's, and there are very few restrictions on what you can sell, but it becomes your responsibility to drive traffic to the website. Store owners must build their store interfaces themselves but with the use of Shopify themes, this is quite intuative and easy.
+Shopify is an e-commerce platform that allows you to easily set up a store on your own domain, while they provide the technical infrastructure of the online store. Your store is not connected to anyone else's, and there are very few restrictions on what you can sell, but it becomes your responsibility to drive traffic to the website. Store owners must build their store interfaces themselves but with the use of Shopify themes, this is quite intuitive and easy.
 
 ### Driving Traffic to your Store
 
@@ -37,7 +37,7 @@ Etsy has a cheaper start-up cost since you do not need to pay for hosting, but a
 
 ### Business Growth &amp; Goals
 
-Now is when you need to think about the longterm goals of your business. On Etsy, you cannot prioritize growing your independent brand because you are limited in how you can represent yourself on the website. Using a web store, you are in complete control of your branding. You have nearly unlimited options for ensuring that you are targeting the right people to bring them to your store, and building your newsletter list which is the most valuable asset of your business. Shopify offers hundreds of tools to assist you with retargetting visitors on Facebook and Instagram, sending people reminders that they have left something in their cart, asking customers for reviews to build social proof, and more.
+Now is when you need to think about the longterm goals of your business. On Etsy, you cannot prioritize growing your independent brand because you are limited in how you can represent yourself on the website. Using a web store, you are in complete control of your branding. You have nearly unlimited options for ensuring that you are targeting the right people to bring them to your store, and building your newsletter list which is the most valuable asset of your business. Shopify offers hundreds of tools to assist you with retargeting visitors on Facebook and Instagram, sending people reminders that they have left something in their cart, asking customers for reviews to build social proof, and more.
 
 ### Conclusion
 
