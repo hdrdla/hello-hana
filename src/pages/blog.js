@@ -69,6 +69,15 @@ const BlogPage = () => {
           }
         }
       }
+      blog5: file(
+        relativePath: { eq: "11-mistakes-that-shopify-beginners-make.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -85,6 +94,14 @@ const BlogPage = () => {
         </div>
         <br />
         <div className="flex-space-between">
+          <div className="blog-feature-image">
+            <Link to="/blog/11-mistakes-shopify-beginners-make">
+              <Img
+                fluid={data.blog5.childImageSharp.fluid}
+                alt="11 Mistakes that Shopify Beginners Make (and How to Fix Them)"
+              />
+            </Link>
+          </div>
           <div className="blog-feature-image">
             <Link to="/blog/pinterest-for-ecommerce-marketing">
               <Img
