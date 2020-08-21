@@ -78,6 +78,15 @@ const BlogPage = () => {
           }
         }
       }
+      blog6: file(
+        relativePath: { eq: "design-a-navigation-menu-that-sells.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -94,6 +103,14 @@ const BlogPage = () => {
         </div>
         <br />
         <div className="flex-space-between">
+          <div className="blog-feature-image">
+            <Link to="/blog/how-to-design-a-navigation-menu-that-sells">
+              <Img
+                fluid={data.blog6.childImageSharp.fluid}
+                alt="How to Design a Navigation Menu that Sells"
+              />
+            </Link>
+          </div>
           <div className="blog-feature-image">
             <Link to="/blog/11-mistakes-shopify-beginners-make">
               <Img
