@@ -103,4 +103,4 @@ I hope that this has helped you improve your store appearance and will result in
 #### You might also like...
 
 - <a href="https://hanadrdla.com/blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Why your newsletter email list is the most valuable part of your Shopify business</a>
-- <a href="https://hanadrdla.com/blog/what-features-are-coming-to-shopify-in-2020" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">What Features are Coming to Shopify in late 2020?</a>
+- <a href="https://hanadrdla.com/blog/why-your-store-isn't-getting-any-sales" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Why your Shopify store isn't getting any sales</a>

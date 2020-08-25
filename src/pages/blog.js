@@ -37,7 +37,7 @@ const BlogPage = () => {
       }
       blog1: file(relativePath: { eq: "shopify-features-2020.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -46,7 +46,7 @@ const BlogPage = () => {
         relativePath: { eq: "shopify-vs-etsy-which-one-is-better.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -55,7 +55,7 @@ const BlogPage = () => {
         relativePath: { eq: "newsletter-marketing-for-shopify.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -64,7 +64,7 @@ const BlogPage = () => {
         relativePath: { eq: "pinterest-for-shopify-ecommerce-marketing.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -73,7 +73,7 @@ const BlogPage = () => {
         relativePath: { eq: "11-mistakes-that-shopify-beginners-make.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -82,7 +82,18 @@ const BlogPage = () => {
         relativePath: { eq: "design-a-navigation-menu-that-sells.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      blog7: file(
+        relativePath: {
+          eq: "why-your-shopify-store-isnt-getting-any-sales.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -103,6 +114,14 @@ const BlogPage = () => {
         </div>
         <br />
         <div className="flex-space-between">
+          <div className="blog-feature-image">
+            <Link to="/blog/why-your-store-isn't-getting-any-sales">
+              <Img
+                fluid={data.blog7.childImageSharp.fluid}
+                alt="Why Your Store Isn’t Getting Any Sales"
+              />
+            </Link>
+          </div>
           <div className="blog-feature-image">
             <Link to="/blog/how-to-design-a-navigation-menu-that-sells">
               <Img

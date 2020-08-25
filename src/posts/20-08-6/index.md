@@ -49,3 +49,10 @@ In addition to clear communication, you can use the menu to raise your average o
 ## Conclusion
 
 Divide your menu items into primary content (shopping related) and secondary content (business related pages). Move all secondary content to the footer menu. If your business focuses on imagery to make sales, use a mega menu that allows you to showcase specific items in the menu.
+
+<br/><br/>
+
+#### You might also like...
+
+- <a href="https://hanadrdla.com/blog/shopify-vs-etsy-for-ecommerce-businesses" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">11 Mistakes that Shopify Beginners Make (and How to Fix Them)</a>
+- <a href="https://hanadrdla.com/blog/how-to-design-a-navigation-menu-that-sells" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Shopify vs. Etsy. Which one should I use for my business?</a>
