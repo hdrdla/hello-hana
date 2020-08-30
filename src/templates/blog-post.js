@@ -5,23 +5,45 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from "../components/bio"
 import { Helmet } from "react-helmet"
+import { useSiteMetadata } from "../components/useSiteMetadata"
 import Img from "gatsby-image"
+import kebabCase from "lodash/kebabCase"
 
 export default function BlogPost({ data, pageContext, location }) {
   const post = data.mdx
   const { previous, next } = pageContext
+  const { image } = useSiteMetadata()
 
   return (
     <Layout location={location}>
-      <SEO
-        title={post.frontmatter.title}
-        image={data.site.siteMetadata.image}
-      />
+      <SEO title={post.frontmatter.title} image={image} />
       <article>
         <h1 className="center">{post.frontmatter.title}</h1>
         <p className="center blog-date">{post.frontmatter.date}</p>
         <Bio />
         <MDXRenderer>{post.body}</MDXRenderer>
+        <br />
+        <br />
+        <p>
+          <strong>
+            Tags:{"  "}
+            {post.frontmatter.tags.map((tag, index) => {
+              return (
+                <span key={index} className="tag">
+                  <Link
+                    to={`/tags/${kebabCase(tag)}/`}
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
+                    {tag}
+                  </Link>{" "}
+                </span>
+              )
+            })}
+          </strong>
+        </p>
+
         <div className="center">
           <Img
             fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
@@ -105,6 +127,7 @@ export const postQuery = graphql`
         path
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

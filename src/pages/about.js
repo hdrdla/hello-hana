@@ -17,21 +17,21 @@ const AboutPage = () => {
           }
         }
       }
-      hulya: file(relativePath: { eq: "Hulya-Hooker-Testimonial.jpeg" }) {
+      hulya: file(relativePath: { eq: "Testimonial-Hulya-Hooker.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      katrina: file(relativePath: { eq: "Katrina-Walker-Testimonial.jpeg" }) {
+      katrina: file(relativePath: { eq: "Testimonial-Katrina-Walker.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      carol: file(relativePath: { eq: "Carol-Murphy-Testimonial.jpeg" }) {
+      carol: file(relativePath: { eq: "Testimonial-Carol-Murphy.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid

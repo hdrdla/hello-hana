@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-const NotFoundPage = () => (
+const ThankYouPage = () => (
   <Layout>
     <SEO title="Thank you!" />
     <section>
@@ -36,4 +36,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default ThankYouPage

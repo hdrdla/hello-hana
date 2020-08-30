@@ -99,6 +99,12 @@ section.about {
   flex-wrap: wrap;
 }
 
+.flex-start {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .hero-flex-1 {
   flex-basis: 45%;
   margin-left: 4vw;
@@ -1603,17 +1609,39 @@ p > code {
 
 .blog-feature-image {
   min-width: 230px;
-  width: 23%;
+  width: 23.5%;
   display: inline-block;
-  margin: 2rem auto;
+  margin: 2rem 2% 2rem 0;
+  &:nth-child(4) {
+    margin: 2rem 0;
+  }
   @media #{$desktop} {
-    width: 31%;
+    width: 32%;
+    margin: 2rem 2% 2rem 0;
+    &:nth-child(4) {
+      margin: 2rem 2% 2rem 0;
+    }
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin: 2rem 0;
+    }
   }
   @media screen and (max-width: 890px) {
     width: 48%;
+    &:nth-child(even) {
+      margin: 2rem 0;
+    }
+    &:nth-child(odd) {
+      margin: 2rem 4% 2rem 0;
+    }
   }
   @media screen and (max-width: 580px) {
     width: 100%;
+    margin: 2rem 0;
+    &:nth-child(odd),
+    &:nth-child(even) {
+      margin: 2rem 0;
+    }
   }
 }
 
@@ -1649,6 +1677,14 @@ p > code {
       max-width: 100%;
     }
   }
+}
+
+.tag {
+  margin: 0px 12px 0px 0px;
+  padding: 4px 8px;
+  border: 1px solid $color-tertiary;
+  border-radius: 5px;
+  background: (lighten($color-tertiary, 5%));
 }
 
 /** BIO **/

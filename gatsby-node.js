@@ -1,11 +1,13 @@
 const path = require("path")
+const _ = require("lodash")
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
 
   const postTemplate = path.resolve("src/templates/blog-post.js")
+  const tagTemplate = path.resolve("src/templates/tags.js")
 
-  return graphql(`
+  const result = await graphql(`
     {
       allMdx {
         edges {
@@ -15,6 +17,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               path
               title
+              tags
             }
           }
           next {
@@ -31,21 +34,43 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           }
         }
       }
+      tagsGroup: allMdx(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
-  `).then(res => {
-    if (res.errors) {
-      return Promise.reject(res.errors)
-    }
+  `)
 
-    res.data.allMdx.edges.forEach(({ node, next, previous }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-        context: {
-          next,
-          previous,
-        },
-      })
+  // handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  const posts = result.data.allMdx.edges
+  // Create post detail pages
+  posts.forEach(({ node, next, previous }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: postTemplate,
+      context: {
+        next,
+        previous,
+      },
+    })
+  })
+
+  // Extract tag data from query
+  const tags = result.data.tagsGroup.group
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
     })
   })
 }

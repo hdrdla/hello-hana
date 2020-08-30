@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import { useSiteMetadata } from "../components/useSiteMetadata"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -12,194 +13,73 @@ const BlogPage = () => {
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
       ) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              date(formatString: "MMMM DD, YYYY")
-              path
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
+        group(field: frontmatter___month) {
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+                month(formatString: "MMMM YYYY")
+                path
+                tags
+                featuredImage {
+                  childImageSharp {
+                    fluid(maxWidth: 800) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
             }
           }
-        }
-      }
-      site {
-        siteMetadata {
-          image
-        }
-      }
-      blog1: file(relativePath: { eq: "shopify-features-2020.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      blog2: file(
-        relativePath: { eq: "shopify-vs-etsy-which-one-is-better.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      blog3: file(
-        relativePath: { eq: "newsletter-marketing-for-shopify.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      blog4: file(
-        relativePath: { eq: "pinterest-for-shopify-ecommerce-marketing.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      blog5: file(
-        relativePath: { eq: "11-mistakes-that-shopify-beginners-make.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      blog6: file(
-        relativePath: { eq: "design-a-navigation-menu-that-sells.jpg" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      blog7: file(
-        relativePath: {
-          eq: "why-your-shopify-store-isnt-getting-any-sales.jpg"
-        }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
+          fieldValue
         }
       }
     }
   `)
 
+  const renderPosts = data.allMdx.group.map(({ edges, fieldValue }) => (
+    <React.Fragment key={fieldValue}>
+      <p className="center">
+        <strong>{edges[0].node.frontmatter.month}</strong>
+      </p>
+
+      <div className="flex-start">
+        {edges.map(({ node }) => (
+          <div
+            key={fieldValue + node.frontmatter.path}
+            className="blog-feature-image"
+          >
+            <Link to={node.frontmatter.path}>
+              <Img
+                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                alt={node.frontmatter.title}
+              />
+            </Link>
+          </div>
+        ))}
+      </div>
+    </React.Fragment>
+  ))
+
+  const { image } = useSiteMetadata()
+
   return (
     <Layout>
-      <SEO title="Blog" image={data.site.siteMetadata.image} />
+      <SEO title="Blog" image={image} />
       <section>
         <div className="center">
           <h1>Welcome to the blog!</h1>
           <br />
           <p>
-            Check back every Tuesday and Thursday for a new post. <br />
+            Check back weekly for a new post. <br />
           </p>
         </div>
         <br />
-        <div className="flex-space-between">
-          <div className="blog-feature-image">
-            <Link to="/blog/why-your-store-isn't-getting-any-sales">
-              <Img
-                fluid={data.blog7.childImageSharp.fluid}
-                alt="Why Your Store Isn’t Getting Any Sales"
-              />
-            </Link>
-          </div>
-          <div className="blog-feature-image">
-            <Link to="/blog/how-to-design-a-navigation-menu-that-sells">
-              <Img
-                fluid={data.blog6.childImageSharp.fluid}
-                alt="How to Design a Navigation Menu that Sells"
-              />
-            </Link>
-          </div>
-          <div className="blog-feature-image">
-            <Link to="/blog/11-mistakes-shopify-beginners-make">
-              <Img
-                fluid={data.blog5.childImageSharp.fluid}
-                alt="11 Mistakes that Shopify Beginners Make (and How to Fix Them)"
-              />
-            </Link>
-          </div>
-          <div className="blog-feature-image">
-            <Link to="/blog/pinterest-for-ecommerce-marketing">
-              <Img
-                fluid={data.blog4.childImageSharp.fluid}
-                alt="Using Pinterest as an E-Commerce Marketing Tool"
-              />
-            </Link>
-          </div>
-          <div className="blog-feature-image">
-            <Link to="/blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business">
-              <Img
-                fluid={data.blog3.childImageSharp.fluid}
-                alt="Why your newsletter email list is the most valuable part of your Shopify business"
-              />
-            </Link>
-          </div>
-          <div className="blog-feature-image">
-            <Link to="/blog/shopify-vs-etsy-for-ecommerce-businesses">
-              <Img
-                fluid={data.blog2.childImageSharp.fluid}
-                alt="Shopify vs. Etsy: Which one is better for e-commerce?"
-              />
-            </Link>
-          </div>
-
-          <div className="blog-feature-image">
-            <Link to="/blog/what-features-are-coming-to-shopify-in-2020">
-              <Img
-                fluid={data.blog1.childImageSharp.fluid}
-                alt="What to expect from Shopify in 2020"
-              />
-            </Link>
-          </div>
-        </div>
-        {/*}
-        <ul>
-          {data.allMdx.edges.map(post => (
-            <li>
-            // I want the featured image here, linked to the post and with an alt tag of the title. I don't need the title and date listed like below, it was just for testing.
-              <Link to={post.node.frontmatter.path} key={post.node.id}>
-                {post.node.frontmatter.title}
-              </Link>
-              {post.node.frontmatter.date}
-                        <Img
-            fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
-            alt={post.frontmatter.title}
-            className="blog-feature-image-pinterest"
-          />
-            </li>
-          ))}
-          </ul>*/}
+        {renderPosts}
       </section>
     </Layout>
   )
 }
 
 export default BlogPage
-
-/*featuredImage {
-  childImageSharp {
-    fluid(maxWidth: 800) {
-      ...GatsbyImageSharpFluid
-    }
-  }
-}*/
