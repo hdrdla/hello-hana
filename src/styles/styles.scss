@@ -1573,7 +1573,8 @@ article {
     padding-bottom: 3rem;
     font-weight: normal;
   }
-  p > a {
+  p > a,
+  li > a {
     font-weight: bold;
     text-decoration: none;
     background-image: linear-gradient(
@@ -1585,7 +1586,7 @@ article {
     );
   }
   li {
-    line-height: 110%;
+    line-height: 120%;
     padding-bottom: 1.3rem;
   }
   ul {

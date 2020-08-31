@@ -24,7 +24,7 @@ const BlogPage = () => {
                 tags
                 featuredImage {
                   childImageSharp {
-                    fluid(maxWidth: 800) {
+                    fluid(maxWidth: 600) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -38,7 +38,20 @@ const BlogPage = () => {
     }
   `)
 
-  const renderPosts = data.allMdx.group.map(({ edges, fieldValue }) => (
+  const newArr = [...data.allMdx.group].sort(function (a, b) {
+    let beforeVal = new Date(a.fieldValue)
+    let afterVal = new Date(b.fieldValue)
+
+    if (beforeVal.getMonth() < afterVal.getMonth()) {
+      return 1
+    }
+    if (beforeVal.getMonth() > afterVal.getMonth()) {
+      return -1
+    }
+    return 0
+  })
+
+  const renderPosts = newArr.map(({ edges, fieldValue }) => (
     <React.Fragment key={fieldValue}>
       <p className="center">
         <strong>{edges[0].node.frontmatter.month}</strong>
