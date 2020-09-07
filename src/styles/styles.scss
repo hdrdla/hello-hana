@@ -1593,15 +1593,14 @@ article {
     margin-left: 2rem;
   }
   code {
-    background-color: $color-medium;
+    background: $color-dark;
+    color: $color-tertiary;
+    padding: 0.2em;
+    border-radius: 3px;
+    font-size: 2rem;
   }
 }
-p > code {
-  background: $color-dark;
-  color: $color-tertiary;
-  padding: 0.2em;
-  border-radius: 3px;
-}
+
 .blog-date {
   font-size: 1.5rem;
 
@@ -1613,13 +1612,15 @@ p > code {
   width: 23.5%;
   display: inline-block;
   margin: 2rem 2% 2rem 0;
-  &:nth-child(4) {
+  &:nth-child(4),
+  &:nth-child(8) {
     margin: 2rem 0;
   }
   @media #{$desktop} {
     width: 32%;
     margin: 2rem 2% 2rem 0;
-    &:nth-child(4) {
+    &:nth-child(4),
+    &:nth-child(8) {
       margin: 2rem 2% 2rem 0;
     }
     &:nth-child(3),

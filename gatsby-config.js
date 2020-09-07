@@ -53,9 +53,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -89,17 +86,20 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-transformer-remark",
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],
-        /*gatsbyRemarkPlugins: [
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
             },
           },
-        ],*/
+        ],
       },
     },
   ],
