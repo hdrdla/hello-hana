@@ -99,6 +99,13 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       showUrl: "thebackcountryhutcompany.com",
     },
     {
+      title: "Sense of Self Counselling",
+      image: "soscGIF",
+      alt: "Sense of Self Counselling Squarespace Website Preview",
+      url: "https://senseofselfcounselling.com/",
+      showUrl: "senseofselfcounselling.com",
+    },
+    {
       title: "Colibri Bulk Food Store",
       image: "colibriGIF",
       alt: "Colibri Shopify Website Preview",
@@ -111,13 +118,6 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       alt: "Wild Cookie Wix Website Preview",
       url: "https://www.wildcookie.eu/",
       showUrl: "wildcookie.eu",
-    },
-    {
-      title: "Lindsi Beth",
-      image: "lindsiGIF",
-      alt: "Lindsi Beth Shopify Website Preview",
-      url: "https://shop.lindsibeth.com/",
-      showUrl: "shop.lindsibeth.com",
     },
     {
       title: "Simona Cellar",

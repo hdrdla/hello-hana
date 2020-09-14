@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 //import Img from "gatsby-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Layout from "../components/layout"
@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import codeopGIF from "../gifs/CodeOp-Website.gif"
 import colibriGIF from "../gifs/Colibri-Productos-al-Granel-Website.gif"
 import fraukeGIF from "../gifs/Frauke-Seewald-Website.gif"
-import lindsiGIF from "../gifs/Lindsi-Beth-Website.gif"
+import lindsiGIF from "../gifs/Lindsi-Hollend-Website.gif"
 import soscGIF from "../gifs/Sense-of-Self-Counselling-Website.gif"
 import simonaGIF from "../gifs/Simona-Cellar-Website.gif"
 import spssGIF from "../gifs/Simply-Pure-Skin-Studio-Website.gif"
@@ -57,30 +57,27 @@ const ProjectsPage = () => {
         <div className="flex-space-between reverse project-showcase">
           <div className="half-width project-showcase-description">
             <p>
-              <strong>Frauke Seewald - UX Designer & Coach</strong>
+              <strong>Lindsi Hollend - Photography & Fine Art</strong>
               <br />
-              <em>Wordpress Build</em>
+              <em>Shopify Design & Build</em>
             </p>
             <p>
-              This website was built for a UX Designer and Coach. Designed
-              herself, I built the client a website that was fully responsive,
-              and easily editable. My knowledge of code removed any restrictions
-              to the design.
+              This project involved building a custom home page photo gallery to
+              display featured works. Lindsi wanted an e-commerce site that was
+              clean and sophisticated. Creating uniform images for the
+              collections page was crucial for maintaining an organized
+              appearance considering the many different image sizes for sale.
             </p>
             <p>
-              <a
-                href="https://www.fraukeseewald.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Visit fraukeseewald.com
-              </a>
+              <Link to="/blog/featured-project-lindsi-hollend-photography">
+                Read more
+              </Link>
             </p>
           </div>
           <div className="half-width">
             <img
-              src={fraukeGIF}
-              alt="Frauke Seewald's Wordpress Website Preview"
+              src={lindsiGIF}
+              alt="Lindsi Hollend's Shopify Website Preview"
               className="portrait"
             />
           </div>
@@ -89,30 +86,30 @@ const ProjectsPage = () => {
         <div className="flex-space-between project-showcase">
           <div className="half-width">
             <img
-              src={soscGIF}
-              alt="Sense of Self Counselling Squarespace Website Preview"
+              src={fraukeGIF}
+              alt="Frauke Seewald's Wordpress Website Preview"
               className="portrait"
             />
           </div>
           <div className="half-width project-showcase-description">
             <p>
-              <strong>Sense of Self Counselling</strong>
+              <strong>Frauke Seewald - UX Designer & Coach</strong>
               <br />
-              <em>Design & Squarespace Build</em>
+              <em>Wordpress Build</em>
             </p>
             <p>
-              This was a fully custom website built for a Psychotherapist who
-              was beginning her private practice. The aim was to have a
-              friendly, and professional feel that invited new clients to
-              contact her for their first session.
+              This website was built for UX Designer and Coach, Frauke Seewald.
+              Designed herself, I built the client a website that was fully
+              responsive, and easily editable. My knowledge of code removed any
+              restrictions to the design.
             </p>
             <p>
               <a
-                href="https://senseofselfcounselling.com/"
+                href="https://www.fraukeseewald.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Visit senseofselfcounselling.com
+                Visit fraukeseewald.com
               </a>
             </p>
           </div>

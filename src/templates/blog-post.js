@@ -8,12 +8,6 @@ import { Helmet } from "react-helmet"
 import { useSiteMetadata } from "../components/useSiteMetadata"
 import Img from "gatsby-image"
 import kebabCase from "lodash/kebabCase"
-import Gist from "react-gist"
-
-const components = {
-  pre: props => <div {...props} />,
-  Gist,
-}
 
 export default function BlogPost({ data, pageContext, location }) {
   const post = data.mdx
