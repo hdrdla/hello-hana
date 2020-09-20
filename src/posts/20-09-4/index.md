@@ -8,7 +8,7 @@ tags: ["shopify", "design"]
 published: true
 ---
 
-Shopify is so appealing as an e-commerce platform because it's easy for the somewhat tech-literate person to launch their own store, but it also has the capability to go above and beyond the usual Shopify store themes, and create some incredible online shopping experiences. A mix of brilliant product photography, and beautiful design can create an unforgettable shopping experience customers.
+Shopify is so appealing as an e-commerce platform because it's easy for the somewhat tech-literate person to launch their own store, but it also has the capability to go above and beyond the usual Shopify store themes, and create some incredible online shopping experiences. A mix of brilliant product photography, and beautiful design can create an unforgettable shopping experience for customers.
 
 Let's take a look at 17 of the best and most unique e-commerce stores built on Shopify.
 
