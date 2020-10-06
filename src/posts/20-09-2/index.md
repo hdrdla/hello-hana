@@ -28,11 +28,11 @@ In this article, we will:
 
 If you are importing an Adobe font, skip to step 2.
 
-If you have the **web font** files, you want to head to your theme code. Go to **Online Store → Actions → Edit Code**. Here you'll see a list of code files. Scroll down to the **Assets** folder and click "**Add a new asset**". Here you need to upload your web font files. I'll be adding "The Braggest". I add three file types: **.eot**, **.ttf**, and **.woff**.
+If you have the **web font** files, you want to head to your theme code. Go to **Online Store → Actions → Edit Code**. Here you'll see a list of code files. Scroll down to the **Assets** folder and click "**Add a new asset**". Here you need to upload your web font files. I'll be adding "The Braggest". I add four file types: **.eot**, **.ttf**, **.woff**, and **.svg**.
 
 ### Step 2: Import font to styles
 
-Find your **theme.scss.liquid** file where all your theme styles are held. Scroll down to the bottom of the file.
+Find your **theme.scss.liquid** file where all your theme styles are held. If you are using a premium theme, check for a **custom.css** file instead. Scroll down to the bottom of the file.
 
 If your fonts were added to assets, add the following code with your font file names. If you are using an Adobe font, put the code from your Adobe font project in the file instead. See the last line of code and replace 'xxxx' with your unique project code.
 

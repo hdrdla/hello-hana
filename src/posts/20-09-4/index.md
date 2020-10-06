@@ -108,7 +108,7 @@ There is seriously nothing to dislike about <a href="https://kinfield.com/?ref=h
 
 ### 16. Lunya
 
-Although having a very traditional e-commerce layout, <a href="https://www.lunya.co/?ref=hanadrdla" target="_blank">Lunya</a>'s website screams "Luxury". The colors and light in their photos are so perfectly crafted that a sense of calmness overwhelms you. True good design really is that... it makes you feel good and you can't necessary identify why. Subtle icon animations add some extra movement to the site and the grid layout on the product page is effortlessly chic, just as you'll feel in their clothes.
+Although having a very traditional e-commerce layout, <a href="https://www.lunya.co/?ref=hanadrdla" target="_blank">Lunya</a>'s website screams "Luxury". The colors and light in their photos are so perfectly crafted that a sense of calmness overwhelms you. True good design really is that... it makes you feel good and you can't necessarily identify why. Subtle icon animations add some extra movement to the site and the grid layout on the product page is effortlessly chic, just as you'll feel in their clothes.
 
 ![Lunya Shopify Website](./lunya-shopify-custom-theme-design.jpg)
 
