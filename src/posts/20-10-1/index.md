@@ -78,7 +78,8 @@ Dissolvable packaging... say what!? Yup, just run the package under some warm wa
 **Suppliers**
 
 - <a href="https://www.smartsolve.com/water-soluble-pouches" target="_blank">Smart Solve</a>: Water soluble tape, threads, labels, paper, and pouches. Just... awesome.
-- <a href="https://www.alibaba.com/" target="_blank">AliBaba</a>: I haven't found many Western companies offering dissolvable options, but AliBaba has you covered with tons of dissolvable packaging in different forms. It's probably something that requires more customization.
+- <a href="https://groundedpackaging.co/products/water-soluble-bag" target="_blank">Grounded Packaging Co.</a>: Water soluble poly bags.
+- <a href="https://www.alibaba.com/" target="_blank">AliBaba</a>: I haven't found many companies offering a wide range of dissolvable options, but AliBaba has you covered with tons of dissolvable packaging in different forms.
 - <a href="https://www.notpla.com/" target="_blank">Notpla</a>: Not really suitable for e-commerce, but I had to include Notpla because of how cool their product is. Their material is made from seaweed and plants and biodegrades in weeks. They are the ultimate zero-waste solution for events.
 
 ### Conclusions

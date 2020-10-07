@@ -9,6 +9,7 @@ import codeopGIF from "../gifs/CodeOp-Website.gif"
 import colibriGIF from "../gifs/Colibri-Productos-al-Granel-Website.gif"
 import fraukeGIF from "../gifs/Frauke-Seewald-Website.gif"
 import lindsiGIF from "../gifs/Lindsi-Hollend-Website.gif"
+import mamabirdGIF from "../gifs/Mama-Bird-and-co-website.gif"
 import soscGIF from "../gifs/Sense-of-Self-Counselling-Website.gif"
 import simonaGIF from "../gifs/Simona-Cellar-Website.gif"
 import spssGIF from "../gifs/Simply-Pure-Skin-Studio-Website.gif"
@@ -54,6 +55,41 @@ const ProjectsPage = () => {
       <SEO title="Projects" image={data.site.siteMetadata.image} />
       <section>
         <h1 className="indent">Recent Projects</h1>
+        <div className="flex-space-between project-showcase">
+          <div className="half-width">
+            <img
+              src={mamabirdGIF}
+              alt="Mama Bird and Co. Website Preview"
+              className="portrait"
+            />
+          </div>
+          <div className="half-width project-showcase-description">
+            <p>
+              <strong>Mama Bird & Co. - Graphic Tees</strong>
+              <br />
+              <em>Shopify Design & Build</em>
+            </p>
+            <p>
+              After one year on Shopify, Graphic T-shirt shop Mama Bird & Co.
+              found that its customers were confused about product availability.
+              This project involved a complete overhaul of 400+ product listings
+              to allow for better organization for both the back and front end.
+              Upgrading to a new theme with color swatches and larger imagery
+              allowed for clarity of product options, and an aesthetic better
+              suited for fashion brands.
+            </p>
+            <p>
+              <a
+                href="https://www.mamabirdandco.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit mamabirdandco.com
+              </a>
+            </p>
+          </div>
+        </div>
+
         <div className="flex-space-between reverse project-showcase">
           <div className="half-width project-showcase-description">
             <p>
@@ -80,38 +116,6 @@ const ProjectsPage = () => {
               alt="Lindsi Hollend's Shopify Website Preview"
               className="portrait"
             />
-          </div>
-        </div>
-
-        <div className="flex-space-between project-showcase">
-          <div className="half-width">
-            <img
-              src={fraukeGIF}
-              alt="Frauke Seewald's Wordpress Website Preview"
-              className="portrait"
-            />
-          </div>
-          <div className="half-width project-showcase-description">
-            <p>
-              <strong>Frauke Seewald - UX Designer & Coach</strong>
-              <br />
-              <em>Wordpress Build</em>
-            </p>
-            <p>
-              This website was built for UX Designer and Coach, Frauke Seewald.
-              Designed herself, I built the client a website that was fully
-              responsive, and easily editable. My knowledge of code removed any
-              restrictions to the design.
-            </p>
-            <p>
-              <a
-                href="https://www.fraukeseewald.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Visit fraukeseewald.com
-              </a>
-            </p>
           </div>
         </div>
       </section>

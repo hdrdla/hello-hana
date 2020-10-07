@@ -78,10 +78,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   const projects = [
     {
+      title: "Frauke Seewald",
+      image: "fraukeGIF",
+      alt: "Frauke Seewald Wordpress Website Preview",
+      url: "https://fraukeseewald.com",
+      showUrl: "fraukeseewald.com",
+    },
+    {
       title: "CodeOp",
       image: "codeopGIF",
       alt: "CodeOp Wordpress Website Preview",
-      url: "http://codeop.tech/",
+      url: "https://codeop.tech/",
       showUrl: "codeop.tech",
     },
     {
@@ -119,18 +126,19 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       url: "https://www.wildcookie.eu/",
       showUrl: "wildcookie.eu",
     },
+    /*
     {
       title: "Simona Cellar",
       image: "simonaGIF",
       alt: "Simona Cellar Wordpress Website Preview",
       url: "https://simonacellar.com/",
       showUrl: "simonacellar.com",
-    },
+    },*/
     {
       title: "Tax on Track Pro",
       image: "totpGIF",
       alt: "Tax on Track Pro Wordpress Website Preview",
-      url: "http://taxontrackpro.com/",
+      url: "https://taxontrackpro.com/",
       showUrl: "taxontrackpro.com",
     },
   ]
