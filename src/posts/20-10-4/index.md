@@ -23,6 +23,8 @@ Here are some ideas to help you get your store in the holiday spirit:
 - **Cross-sell in spirit:** Cross-sell small items and gift cards as **stocking stuffers**. Place these impulse buying items strategically in the store and at checkout. You can also use these to help customers reach a free shipping tier. 
 - **Offer creative discounts:** Use the 12 days of Christmas to offer a discount on a different item each day. Another idea is to offer a free gift card with a purchase of $100 or more. These flash sales create a sense of urgency and when promoted correctly, should cause sales to come rolling it. 
 - **Offer local delivery:** As shipping times become tight or impossible closer to Christmas, offer local shipping to customers in your city. The Local Delivery app allows you to map out delivery locations. 
-- **Update your Instagram storefront:** Customize your Instagram Shop to have your festive best sellers front and center.
+- **Update your Instagram storefront:** Customize your Instagram Shop to have your festive best sellers front and center. Make sure that you're tagging your products to make it easy for people to purchase right away. 
+- **Launch a holiday product:** With some planning ahead, you can launch a holiday themed product that helps people indulge in the holiday spirit. Think of Lush's Christmas products, or Starbucks' holiday drinks.
+- **Run a holiday giveaway:** A great way to spread awareness about your products right when people are looking to shop.
 
 I hope this gave you some ideas on how to get into the e-commerce holiday spirit. Some final points to remember: Make shipping times clear at every step of the buying process. Always aim for a higher average order value, especially if you are offering discounts. And finally, if you plan to advertise during the holiday season, determine your advertising budget based on your revenue history and goals. 
