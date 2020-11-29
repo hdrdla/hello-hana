@@ -21,5 +21,3 @@ We filled the gallery with a mix of product images and mockups to show visitors 
 Beyond the home page, there was the challenge of the prints all being different shapes: portrait, landscape, and square. To achieve a uniform appearance on the collection page, I chose to create a square cover image for each of these pictures, with a light grey border. This ensured a neat and uniform uniform look with all titles and images on the same horizontal line.
 
 ![Collection Page](./collections-page-grid.png)
-
-If you'd like to check out Lindsi's work, head to <a href="https://shop.lindsibeth.com" target="_blank">lindsibeth.com</a>.

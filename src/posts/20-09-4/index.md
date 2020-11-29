@@ -118,6 +118,12 @@ After cats, my favorite thing is tea so when I found <a href="https://golde.co/?
 
 ![Golde Shopify Website](./golde-shopify-custom-theme-design.jpg)
 
+### Bonus. Aisle
+
+I had to come back and edit this article when I saw <a href="https://periodaisle.ca/?ref=hanadrdla" target="_blank">Aisle</a>'s website. Their design and photos are stellar and I was really impressed with how responsive the design was. There are nice touches like the svg shapes throughout the site that are subtly moving and the footer that *flows* if you know what I mean... This site is truly memorable. 
+
+![Aisle  Shopify Website](./aisle-shopify-custom-theme-design.jpg)
+
 <br/>
 
 Is there a site you think deserves to be featured here? <a href="https://twitter.com/hdrdla" target="_blank">Let me know</a>!
