@@ -55,14 +55,10 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Lato`,
-            variants: [`400`, `700`, `900`],
-          },
-        ],
+        fonts: [`lato:400,700,900`],
+        display: "swap",
       },
     },
     {
