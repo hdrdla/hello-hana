@@ -62,7 +62,7 @@ const ServicesPage = () => {
             <div className="box-service-content">
               <h3>Website Design & Development</h3>
               <ul>
-                <li>3-5 page WordPress or Squarespace custom website</li>
+                <li>4-6 page WordPress or Squarespace custom website</li>
                 <hr />
                 <li>Web design to reach your target audience</li>
                 <hr />
@@ -80,8 +80,12 @@ const ServicesPage = () => {
               <div className="price">
                 <p>
                   An investment of <br />
-                  <span className="dollar">$1250</span>{" "}
-                  <span className="accent"> USD</span>
+                  <span className="dollar">$1500</span>{" "}
+                  <span className="accent">
+                    {" "}
+                    USD <br />
+                    ($2000 +HST CAD)
+                  </span>
                 </p>
               </div>
             </div>
@@ -95,7 +99,7 @@ const ServicesPage = () => {
                 <hr />
                 <li>Home page design that engages your customers</li>
                 <hr />
-                <li>Custom About, FAQ & Contact pages</li>
+                <li>About, FAQ, Contact & Policy pages</li>
                 <hr />
                 <li>Adding and organizing products</li>
                 <hr />
@@ -109,8 +113,12 @@ const ServicesPage = () => {
               <div className="price">
                 <p>
                   Starting at <br />
-                  <span className="dollar">$1000</span>{" "}
-                  <span className="accent"> USD</span>
+                  <span className="dollar">$1200</span>{" "}
+                  <span className="accent">
+                    {" "}
+                    USD <br />
+                    ($1500 +HST CAD)
+                  </span>
                 </p>
               </div>
             </div>
@@ -120,7 +128,7 @@ const ServicesPage = () => {
             <div className="box-service-content">
               <h3>Shopify Maintenance & Customizations</h3>
               <ul>
-                <li>Shopify theme customizations</li>
+                <li>Shopify Liquid code theme customizations</li>
                 <hr />
                 <li>Custom page layouts</li>
                 <hr />
@@ -130,19 +138,23 @@ const ServicesPage = () => {
                 <hr />
                 <li>App installation & setup</li>
                 <hr />
-                <li>Facebook & Instagram Integration</li>
+                <li>Facebook & Instagram Shop Integration</li>
                 <hr />
                 <li>Store maintenance</li>
                 <hr />
               </ul>
+
               <div className="price">
-                <p className="small">
-                  Save 20% when purchasing a 5+ hour per month retainer (3 month
-                  minimum)
-                  <br />
-                  <br />
-                  <span className="dollar">$50/hour</span>{" "}
-                  <span className="accent"> USD</span>
+                <br />
+                <br />
+                <p>
+                  Hourly rate of <br />
+                  <span className="dollar">$50</span>{" "}
+                  <span className="accent">
+                    {" "}
+                    USD <br />
+                    ($65 +HST CAD)
+                  </span>
                 </p>
               </div>
             </div>
