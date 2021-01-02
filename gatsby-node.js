@@ -78,14 +78,49 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   const projects = [
     {
+      title: "Laura Dershaw Skincare",
+      description: "Squarespace, Beauty",
+      image: "lauraGIF",
+      alt: "Laura Dershaw Skincare Squarespace Website Preview",
+      url: "https://lauradershawskincare.com",
+      showUrl: "lauradershawskincare.com",
+    },
+    {
+      title: "Kelly Waldeck Renewed",
+      description: "Squarespace, Beauty",
+      image: "kellyGIF",
+      alt: "Kelly Waldeck Squarespace Website Preview",
+      url: "https://kellywaldeckrenewed.com",
+      showUrl: "kellywaldeckrenewed.com",
+    },
+    {
       title: "Frauke Seewald",
+      description: "Wordpress, Design",
       image: "fraukeGIF",
       alt: "Frauke Seewald Wordpress Website Preview",
       url: "https://fraukeseewald.com",
       showUrl: "fraukeseewald.com",
     },
     {
+      title: "Lindsi Hollend",
+      description: "Shopify, Photography",
+      image: "lindsiGIF",
+      alt: "Lindsi Hollend Shopify Website Preview",
+      url:
+        "https://www.hanadrdla.com/blog/featured-project-lindsi-hollend-photography",
+      showUrl: "read more",
+    },
+    {
+      title: "Reliable Aerospace World Services",
+      description: "Wordpress, Aviation",
+      image: "rawsGIF",
+      alt: "Reliable Aerospace World Services Wordpress Website Preview",
+      url: "https://reliableaerospace.com",
+      showUrl: "reliableaerospace.com",
+    },
+    {
       title: "CodeOp",
+      description: "Wordpress, Education",
       image: "codeopGIF",
       alt: "CodeOp Wordpress Website Preview",
       url: "https://codeop.tech/",
@@ -93,6 +128,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     },
     {
       title: "Simply Pure Skin Studio",
+      description: "Shopify, Beauty",
       image: "spssGIF",
       alt: "Simply Pure SKin Studio Shopify Website Preview",
       url: "https://simplypureskinstudio.com",
@@ -100,6 +136,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     },
     {
       title: "The Backcountry Hut Company",
+      description: "Squarespace, Construction",
       image: "bhcGIF",
       alt: "The Backcountry Hut Company Squarespace Website Preview",
       url: "https://www.thebackcountryhutcompany.com/",
@@ -107,6 +144,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     },
     {
       title: "Sense of Self Counselling",
+      description: "Squarespace, Counselling",
       image: "soscGIF",
       alt: "Sense of Self Counselling Squarespace Website Preview",
       url: "https://senseofselfcounselling.com/",
@@ -114,6 +152,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     },
     {
       title: "Colibri Bulk Food Store",
+      description: "Shopify, Food",
       image: "colibriGIF",
       alt: "Colibri Shopify Website Preview",
       url: "https://colibribcn.com/",
@@ -121,6 +160,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     },
     {
       title: "Wild Cookie",
+      description: "Wix, Entertainment",
       image: "wildcookieGIF",
       alt: "Wild Cookie Wix Website Preview",
       url: "https://www.wildcookie.eu/",
@@ -129,6 +169,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     /*
     {
       title: "Simona Cellar",
+      description: "Custom, Design",
       image: "simonaGIF",
       alt: "Simona Cellar Wordpress Website Preview",
       url: "https://simonacellar.com/",
@@ -136,6 +177,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     },*/
     {
       title: "Tax on Track Pro",
+      description: "Wordpress, Software",
       image: "totpGIF",
       alt: "Tax on Track Pro Wordpress Website Preview",
       url: "https://taxontrackpro.com/",
@@ -146,6 +188,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   projects.forEach(project => {
     const node = {
       title: project.title,
+      description: project.description,
       image: project.image,
       alt: project.alt,
       url: project.url,

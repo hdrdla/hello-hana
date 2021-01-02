@@ -5,29 +5,38 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import alilaGIF from "../gifs/Alila-Jewelry-Website.gif"
+import bhcGIF from "../gifs/The-Backcountry-Hut-Company-Website.gif"
 import codeopGIF from "../gifs/CodeOp-Website.gif"
 import colibriGIF from "../gifs/Colibri-Productos-al-Granel-Website.gif"
 import fraukeGIF from "../gifs/Frauke-Seewald-Website.gif"
+import kellyGIF from "../gifs/Kelly-Waldeck-Website.gif"
+import lauraGIF from "../gifs/Laura-Dershaw-Skincare-Website.gif"
 import lindsiGIF from "../gifs/Lindsi-Hollend-Website.gif"
 import mamabirdGIF from "../gifs/Mama-Bird-and-co-website.gif"
+import rawsGIF from "../gifs/RAWS-Website.gif"
 import soscGIF from "../gifs/Sense-of-Self-Counselling-Website.gif"
 import simonaGIF from "../gifs/Simona-Cellar-Website.gif"
 import spssGIF from "../gifs/Simply-Pure-Skin-Studio-Website.gif"
+import terGIF from "../gifs/Telephone-Explosion-Website.gif"
 import totpGIF from "../gifs/Tax-on-Track-Pro-Website.gif"
-import bhcGIF from "../gifs/The-Backcountry-Hut-Company-Website.gif"
+
 import wildcookieGIF from "../gifs/Wild-Cookie-Website.gif"
 
 const ProjectsPage = () => {
   const imgArr = {
+    bhcGIF: bhcGIF,
     codeopGIF: codeopGIF,
     colibriGIF: colibriGIF,
     fraukeGIF: fraukeGIF,
+    kellyGIF: kellyGIF,
+    lauraGIF: lauraGIF,
     lindsiGIF: lindsiGIF,
     soscGIF: soscGIF,
+    rawsGIF: rawsGIF,
     simonaGIF: simonaGIF,
     spssGIF: spssGIF,
     totpGIF: totpGIF,
-    bhcGIF: bhcGIF,
     wildcookieGIF: wildcookieGIF,
   }
 
@@ -36,6 +45,7 @@ const ProjectsPage = () => {
       allProject {
         nodes {
           title
+          description
           image
           alt
           url
@@ -93,29 +103,65 @@ const ProjectsPage = () => {
         <div className="flex-space-between reverse project-showcase">
           <div className="half-width project-showcase-description">
             <p>
-              <strong>Lindsi Hollend - Photography & Fine Art</strong>
+              <strong>Telephone Explosion Records</strong>
               <br />
-              <em>Shopify Design & Build</em>
+              <em>Shopify Redesign & Build</em>
             </p>
             <p>
-              This project involved building a custom home page photo gallery to
-              display featured works. Lindsi wanted an e-commerce site that was
-              clean and sophisticated. Creating uniform images for the
-              collections page was crucial for maintaining an organized
-              appearance considering the many different image sizes for sale.
+              A modern and bold refresh to TER's website with an emphasis on
+              connecting customers to the music. By embedding music players,
+              adding digital downloads, and allowing for easier discovery of the
+              catalog, customers can have an emmersive shopping experience. This
+              project involved building several custom sections and page
+              layouts.
             </p>
             <p>
-              <Link to="/blog/featured-project-lindsi-hollend-photography">
-                Read more
-              </Link>
+              <a
+                href="https://www.telephonexplosion.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit telephoneexplosion.com
+              </a>
             </p>
           </div>
           <div className="half-width">
             <img
-              src={lindsiGIF}
-              alt="Lindsi Hollend's Shopify Website Preview"
+              src={terGIF}
+              alt="Telephone Explosion Records Shopify Website Preview"
               className="portrait"
             />
+          </div>
+        </div>
+
+        <div className="flex-space-between project-showcase">
+          <div className="half-width">
+            <img
+              src={alilaGIF}
+              alt="Alila Jewelry Website Preview"
+              className="portrait"
+            />
+          </div>
+          <div className="half-width project-showcase-description">
+            <p>
+              <strong>ALILA Jewelry</strong>
+              <br />
+              <em>Shopify Design & Build</em>
+            </p>
+            <p>
+              A start-to-finish Shopify store setup. Using a free theme, I
+              customized the theme code to create an attractive and polished
+              design that focused on the visual nature of the product.
+            </p>
+            <p>
+              <a
+                href="https://www.alilajewelry.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit alilajewelry.com
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -128,7 +174,8 @@ const ProjectsPage = () => {
             <div className="past-project" key={i}>
               <img src={imgArr[obj.image]} alt={obj.alt} />
               <p>
-                {obj.title} <br />
+                <strong>{obj.title} </strong> <br />
+                {obj.description} <br />
                 <a href={obj.url} target="_blank" rel="noreferrer">
                   {" "}
                   {obj.showUrl}{" "}
