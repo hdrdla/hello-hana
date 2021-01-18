@@ -1739,3 +1739,11 @@ p.bio-name {
 .left img {
   text-align: left;
 }
+
+ol.sub-list {
+  margin-left: 30px;
+  margin-top: 20px;
+  li {
+    line-height: 0.75;
+  }
+}
