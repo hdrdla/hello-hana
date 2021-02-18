@@ -1613,7 +1613,10 @@ article {
   display: inline-block;
   margin: 2rem 2% 2rem 0;
   &:nth-child(4),
-  &:nth-child(8) {
+  &:nth-child(8),
+  &:nth-child(12),
+  &:nth-child(16),
+  &:nth-child(20) {
     margin: 2rem 0;
   }
   @media #{$desktop} {

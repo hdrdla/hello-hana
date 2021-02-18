@@ -3,6 +3,7 @@ path: /blog/unique-best-shopify-stores
 title: "17 Examples of Unique E-Commerce Stores Using Shopify"
 date: 2020-09-22
 month: 2020-09-01
+year: 2020-01-01
 featuredImage: ./most-unique-and-best-designed-shopify-stores.jpg
 tags: ["shopify", "design"]
 published: true

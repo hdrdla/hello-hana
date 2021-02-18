@@ -3,6 +3,7 @@ path: /blog/shopify-vs-squarespace-ecommerce
 title: Shopify vs. Squarespace for E-Commerce
 date: 2020-10-20
 month: 2020-10-01
+year: 2020-01-01
 featuredImage: ./shopify-vs-squarespace-ecommerce.jpg
 tags: ["shopify"]
 published: true

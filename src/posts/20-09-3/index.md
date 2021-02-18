@@ -3,6 +3,7 @@ path: /blog/featured-project-lindsi-hollend-photography
 title: "Featured Project: Lindsi Hollend Photography"
 date: 2020-09-15
 month: 2020-09-01
+year: 2020-01-01
 featuredImage: ./featured-project-lindsi-hollend-photography.jpg
 tags: ["shopify", "feature"]
 published: true

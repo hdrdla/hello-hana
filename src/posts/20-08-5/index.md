@@ -3,6 +3,7 @@ path: /blog/11-mistakes-shopify-beginners-make
 title: 11 Mistakes that Shopify Beginners Make (and How to Fix Them)
 date: 2020-08-18
 month: 2020-08-01
+year: 2020-01-01
 featuredImage: ./11-mistakes-that-shopify-beginners-make.jpg
 tags: ["shopify", "shopify 101"]
 published: true

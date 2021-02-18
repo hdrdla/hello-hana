@@ -3,6 +3,7 @@ path: /blog/eco-friendly-packaging-ecommerce
 title: Eco-Friendly Packaging for E-Commerce
 date: 2020-10-06
 month: 2020-10-01
+year: 2020-01-01
 featuredImage: ./eco-friendly-packaging-ecommerce.jpg
 tags: ["shopify", "packaging"]
 published: true

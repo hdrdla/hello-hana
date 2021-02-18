@@ -3,6 +3,7 @@ path: /blog/how-to-add-custom-font-shopify
 title: How to Add a Custom Font to Shopify
 date: 2020-09-08
 month: 2020-09-01
+year: 2020-01-01
 featuredImage: ./how-to-add-a-custom-font-to-shopify.jpg
 tags: ["shopify", "tutorial", "shopify101"]
 published: true

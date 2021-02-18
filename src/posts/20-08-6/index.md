@@ -3,6 +3,7 @@ path: /blog/how-to-design-a-navigation-menu-that-sells
 title: How to Design a Navigation Menu that Sells
 date: 2020-08-20
 month: 2020-08-01
+year: 2020-01-01
 featuredImage: ./design-a-navigation-menu-that-sells.jpg
 tags: ["shopify", "shopify 101"]
 published: true

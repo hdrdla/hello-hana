@@ -3,6 +3,7 @@ path: /blog/preparing-for-the-holiday-season
 title: Prepare Your Store for the Holiday Season
 date: 2020-10-25
 month: 2020-10-01
+year: 2020-01-01
 featuredImage: ./shopify-stores-holiday-shopping-season.jpg
 tags: ["shopify", "ecommerce"]
 published: true

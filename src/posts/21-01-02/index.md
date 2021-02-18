@@ -3,6 +3,7 @@ path: /blog/how-to-make-your-website-ecofriendly
 title: How to Build an Eco-Friendly Website
 date: 2021-01-12
 month: 2021-01-01
+year: 2021-01-01
 featuredImage: ./build-an-eco-friendly-website.jpg
 tags: ["web design"]
 published: true

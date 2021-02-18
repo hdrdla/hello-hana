@@ -3,6 +3,7 @@ path: /blog/pinterest-for-ecommerce-marketing
 title: Using Pinterest as an E-Commerce Marketing Tool
 date: 2020-08-13
 month: 2020-08-01
+year: 2020-01-01
 featuredImage: ./pinterest-for-shopify-ecommerce-marketing.jpg
 tags: ["shopify", "marketing"]
 published: true

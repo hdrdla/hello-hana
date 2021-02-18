@@ -3,6 +3,7 @@ path: /blog/policies-for-your-shopify-store
 title: Required Policies for your Shopify Store
 date: 2021-01-05
 month: 2021-01-01
+year: 2021-01-01
 featuredImage: ./policies-required-for-website.jpg
 tags: ["ecommerce"]
 published: true

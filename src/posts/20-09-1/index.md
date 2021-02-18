@@ -3,6 +3,7 @@ path: /blog/shopify-page-speed-report
 title: Shopify's New Page Speed Report
 date: 2020-09-01
 month: 2020-09-01
+year: 2020-01-01
 featuredImage: ./improve-shopify-website-speed.jpg
 tags: ["shopify"]
 published: true

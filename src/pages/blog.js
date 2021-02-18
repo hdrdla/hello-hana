@@ -13,13 +13,13 @@ const BlogPage = () => {
         sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { published: { eq: true } } }
       ) {
-        group(field: frontmatter___month) {
+        group(field: frontmatter___year) {
           edges {
             node {
               id
               frontmatter {
                 title
-                month(formatString: "MMMM YYYY")
+                year(formatString: "YYYY")
                 path
                 tags
                 featuredImage {
@@ -42,10 +42,10 @@ const BlogPage = () => {
     let beforeVal = new Date(a.fieldValue)
     let afterVal = new Date(b.fieldValue)
 
-    if (beforeVal.getMonth() < afterVal.getMonth()) {
+    if (beforeVal.getYear() < afterVal.getYear()) {
       return 1
     }
-    if (beforeVal.getMonth() > afterVal.getMonth()) {
+    if (beforeVal.getYear() > afterVal.getYear()) {
       return -1
     }
     return 0
@@ -54,7 +54,7 @@ const BlogPage = () => {
   const renderPosts = newArr.map(({ edges, fieldValue }) => (
     <React.Fragment key={fieldValue}>
       <p className="center">
-        <strong>{edges[0].node.frontmatter.month}</strong>
+        <strong>{edges[0].node.frontmatter.year}</strong>
       </p>
 
       <div className="flex-start">
@@ -85,7 +85,9 @@ const BlogPage = () => {
           <h1>Welcome to the blog!</h1>
           <br />
           <p>
-            Check back weekly for a new post. <br />
+            Check back regularly for my thoughts on Shopify and web design.{" "}
+            <br />
+            <br />
           </p>
         </div>
         <br />

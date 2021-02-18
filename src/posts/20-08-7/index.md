@@ -3,6 +3,7 @@ path: /blog/why-your-store-isn't-getting-any-sales
 title: Why Your Store Isn’t Getting Any Sales
 date: 2020-08-25
 month: 2020-08-01
+year: 2020-01-01
 featuredImage: ./why-your-shopify-store-isnt-getting-any-sales.jpg
 tags: ["shopify", "shopify 101"]
 published: true

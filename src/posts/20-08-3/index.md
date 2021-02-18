@@ -3,6 +3,7 @@ path: /blog/why-your-newsletter-email-list-is-valuable-to-your-shopify-business
 title: Why your newsletter email list is the most valuable part of your Shopify business
 date: 2020-08-11
 month: 2020-08-01
+year: 2020-01-01
 featuredImage: ./newsletter-marketing-for-shopify.jpg
 tags: ["shopify", "shopify 101", "marketing"]
 published: true

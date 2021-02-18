@@ -3,6 +3,7 @@ path: /blog/web-accessibility-for-ecommerce
 title: Web Accessibility for E-Commerce
 date: 2020-11-25
 month: 2020-11-01
+year: 2020-01-01
 featuredImage: ./web-accessibility-ecommerce.jpg
 tags: ["ecommerce"]
 published: true

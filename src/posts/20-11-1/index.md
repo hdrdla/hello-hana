@@ -3,6 +3,7 @@ path: /blog/alternative-entrance-popups
 title: An Alternative to Entrance Popups
 date: 2020-11-04
 month: 2020-11-01
+year: 2020-01-01
 featuredImage: ./alternative-to-entrance-popups.jpg
 tags: ["shopify", "ecommerce"]
 published: true

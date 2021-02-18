@@ -3,6 +3,7 @@ path: /blog/selling-wholesale-on-shopify
 title: How to Sell Wholesale on Shopify
 date: 2020-10-13
 month: 2020-10-01
+year: 2020-01-01
 featuredImage: ./how-to-sell-wholesale-on-shopify.jpg
 tags: ["shopify"]
 published: true
