@@ -73,7 +73,7 @@ const Footer = () => (
     </div>
 
     <div className="center footer-print">
-      <p>designed and developed by Hana Drdla, 2020</p>
+      <p>designed and developed by Hana Drdla, 2021</p>
     </div>
   </footer>
 )

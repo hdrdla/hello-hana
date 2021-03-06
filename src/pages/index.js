@@ -71,16 +71,9 @@ const IndexPage = () => {
             <h1 className="hidden">
               Shopify and Web Development for Women Entrepreneurs
             </h1>
-            <OutboundLink
-              href="https://hanadrdla.ck.page/prospective-client-packet"
-              target="_blank"
-              rel="noreferrer"
-              alt="Prospective Client Packet "
-              aria-label="Download my Prospective Client Packet"
-              className="btn btn-purple"
-            >
+            <Link to="/contact" className="btn btn-purple">
               Let's work together
-            </OutboundLink>
+            </Link>
           </div>
           <div className="hero-flex-2">
             <Img

@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -62,13 +62,11 @@ const ServicesPage = () => {
             <div className="box-service-content">
               <h3>Website Design & Development</h3>
               <ul>
-                <li>4-6 page WordPress or Squarespace custom website</li>
+                <li>5-7 page WordPress or Squarespace custom website</li>
                 <hr />
                 <li>Web design to reach your target audience</li>
                 <hr />
                 <li>Responsive design (optimized for mobile and desktop)</li>
-                <hr />
-                <li>Content Creation Guide</li>
                 <hr />
                 <li>Newsletter Signup</li>
                 <hr />
@@ -80,11 +78,11 @@ const ServicesPage = () => {
               <div className="price">
                 <p>
                   An investment of <br />
-                  <span className="dollar">$1500</span>{" "}
+                  <span className="dollar">$2000</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($2000 +HST CAD)
+                    ($2500 +HST CAD)
                   </span>
                 </p>
               </div>
@@ -97,7 +95,7 @@ const ServicesPage = () => {
               <ul>
                 <li>Complete store setup customized to your brand</li>
                 <hr />
-                <li>Home page design that engages your customers</li>
+                <li>Engaging home page design</li>
                 <hr />
                 <li>About, FAQ, Contact & Policy pages</li>
                 <hr />
@@ -107,17 +105,17 @@ const ServicesPage = () => {
                   E-commerce ready (shipping rates, customer emails, etc).
                 </li>
                 <hr />
-                <li>Includes 1 hour of code customizations</li>
+                <li>5 hours of code customizations</li>
                 <hr />
               </ul>
               <div className="price">
                 <p>
                   Starting at <br />
-                  <span className="dollar">$1200</span>{" "}
+                  <span className="dollar">$2000</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($1500 +HST CAD)
+                    ($2500 +HST CAD)
                   </span>
                 </p>
               </div>
@@ -130,9 +128,7 @@ const ServicesPage = () => {
               <ul>
                 <li>Shopify Liquid code theme customizations</li>
                 <hr />
-                <li>Custom page layouts</li>
-                <hr />
-                <li>Add options to your theme</li>
+                <li>Custom page layouts & options</li>
                 <hr />
                 <li>Customer emails & newsletters</li>
                 <hr />
@@ -162,16 +158,9 @@ const ServicesPage = () => {
         </div>
 
         <div className="center">
-          <OutboundLink
-            href="https://hanadrdla.ck.page/prospective-client-packet"
-            target="_blank"
-            rel="noreferrer"
-            alt="Prospective Client Packet "
-            aria-label="Download my Prospective Client Packet"
-            className="btn btn-blue"
-          >
+          <Link to="/contact" className="btn btn-blue">
             Start your project
-          </OutboundLink>
+          </Link>
         </div>
       </section>
 

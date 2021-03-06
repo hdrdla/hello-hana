@@ -42,16 +42,6 @@ const ContactPage = () => {
               you within 48 hours.
               <br />
               <br />
-              Or, get the&nbsp;
-              <OutboundLink
-                href="https://hanadrdla.ck.page/prospective-client-packet"
-                target="_blank"
-                rel="noreferrer"
-                alt="Prospective Client Packet "
-                aria-label="Download my Prospective Client Packet"
-              >
-                Prospective Client Packet.
-              </OutboundLink>
             </p>
 
             <h3 className="underline ul-yellow">Stay in Touch</h3>

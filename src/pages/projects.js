@@ -190,16 +190,9 @@ const ProjectsPage = () => {
       <section>
         <h2 className="center half-width">Ready to start your project?</h2>
         <div className="center">
-          <OutboundLink
-            href="https://hanadrdla.ck.page/prospective-client-packet"
-            target="_blank"
-            rel="noreferrer"
-            alt="Prospective Client Packet "
-            aria-label="Download my Prospective Client Packet"
-            className="btn btn-yellow"
-          >
-            Get the Prospective Client Packet
-          </OutboundLink>
+          <Link to="/contact" className="btn btn-yellow">
+            Get in touch
+          </Link>
         </div>
       </section>
     </Layout>
