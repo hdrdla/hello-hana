@@ -37,11 +37,11 @@ const ContactPage = () => {
         <div className="flex-space-between">
           <div className="indent contact-hero-flex-1 mobile-left">
             <h3 className="underline ul-blue">How can I help you?</h3>
+            <p>Send me an email at hanadrdla@gmail.com</p>
+            <br />
             <p className="pad-bottom">
               Tell me about the project you have in mind and I'll get back to
               you within 48 hours.
-              <br />
-              <br />
             </p>
 
             <h3 className="underline ul-yellow">Stay in Touch</h3>
@@ -49,6 +49,7 @@ const ContactPage = () => {
           </div>
 
           <div className="hero-flex-2">
+            {/*
             <div className="contact-form">
               <form
                 action="http://www.focuspocus.io/magic/2637219f9220c2bc0d857053b76e6943"
@@ -104,7 +105,7 @@ const ContactPage = () => {
                   disabled={!verify ? true : false}
                 />
               </form>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
