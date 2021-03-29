@@ -62,9 +62,9 @@ const ServicesPage = () => {
             <div className="box-service-content">
               <h3>Website Design & Development</h3>
               <ul>
-                <li>5-7 page WordPress or Squarespace custom website</li>
+                <li>5-7 page WordPress or Squarespace website</li>
                 <hr />
-                <li>Web design to reach your target audience</li>
+                <li>Custom web design to reach your target audience</li>
                 <hr />
                 <li>Responsive design (optimized for mobile and desktop)</li>
                 <hr />
@@ -78,11 +78,11 @@ const ServicesPage = () => {
               <div className="price">
                 <p>
                   An investment of <br />
-                  <span className="dollar">$2000</span>{" "}
+                  <span className="dollar">$2500</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($2500 +HST CAD)
+                    ($3000 +HST CAD)
                   </span>
                 </p>
               </div>
@@ -91,19 +91,19 @@ const ServicesPage = () => {
 
           <div className="box box-blue">
             <div className="box-service-content">
-              <h3>Shopify Development: Store Setup</h3>
+              <h3>Shopify Design & Development</h3>
               <ul>
-                <li>Complete store setup customized to your brand</li>
+                <li>Complete store design customized to your brand</li>
                 <hr />
-                <li>Engaging home page design</li>
+                <li>Product addition & organization</li>
                 <hr />
                 <li>About, FAQ, Contact & Policy pages</li>
-                <hr />
-                <li>Adding and organizing products</li>
                 <hr />
                 <li>
                   E-commerce ready (shipping rates, customer emails, etc).
                 </li>
+                <hr />
+                <li>Newsletter email collection</li>
                 <hr />
                 <li>5 hours of code customizations</li>
                 <hr />
@@ -111,11 +111,11 @@ const ServicesPage = () => {
               <div className="price">
                 <p>
                   Starting at <br />
-                  <span className="dollar">$2000</span>{" "}
+                  <span className="dollar">$2500</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($2500 +HST CAD)
+                    ($3000 +HST CAD)
                   </span>
                 </p>
               </div>
@@ -124,32 +124,32 @@ const ServicesPage = () => {
 
           <div className="box box-yellow">
             <div className="box-service-content">
-              <h3>Shopify Maintenance & Customizations</h3>
+              <h3>Book Me for a Day — One Day Intensive</h3>
               <ul>
-                <li>Shopify Liquid code theme customizations</li>
+                <li>
+                  Have all your website needs completed quickly & efficiently
+                </li>
                 <hr />
-                <li>Custom page layouts & options</li>
+                <li>My full attention for one day</li>
                 <hr />
-                <li>Customer emails & newsletters</li>
+                <li>The convenience of fast & good work</li>
                 <hr />
-                <li>App installation & setup</li>
+                <li>Be close to the process</li>
                 <hr />
-                <li>Facebook & Instagram Shop Integration</li>
+                <li>Know the cost upfront</li>
                 <hr />
-                <li>Store maintenance</li>
+                <li>Includes pre- & post-day work and communication</li>
                 <hr />
               </ul>
 
               <div className="price">
-                <br />
-                <br />
                 <p>
-                  Hourly rate of <br />
-                  <span className="dollar">$50</span>{" "}
+                  Day rate of <br />
+                  <span className="dollar">$400</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($65 +HST CAD)
+                    ($500 +HST CAD)
                   </span>
                 </p>
               </div>
