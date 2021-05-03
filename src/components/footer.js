@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
 import Socials from "./socials"
 
@@ -30,15 +29,7 @@ const Footer = () => (
       <div>
         <ul>
           <li>
-            <OutboundLink
-              href="https://hanadrdla.ck.page/prospective-client-packet"
-              target="_blank"
-              rel="noreferrer"
-              alt="Prospective Client Packet "
-              aria-label="Download my Prospective Client Packet"
-            >
-              Prospective Client Packet
-            </OutboundLink>
+            <Link to="/client-portal">Client Portal</Link>
           </li>
           <li>
             <Link to="/shopify-course">Shopify Course</Link>
