@@ -60,37 +60,6 @@ const ServicesPage = () => {
         <div className="flex-space-between">
           <div className="box box-purple">
             <div className="box-service-content">
-              <h3>Website Design & Development</h3>
-              <ul>
-                <li>5-7 page WordPress or Squarespace website</li>
-                <hr />
-                <li>Custom web design to reach your target audience</li>
-                <hr />
-                <li>Responsive design (optimized for mobile and desktop)</li>
-                <hr />
-                <li>Newsletter Signup</li>
-                <hr />
-                <li>SEO Strategies</li>
-                <hr />
-                <li>Recorded Training video</li>
-                <hr />
-              </ul>
-              <div className="price">
-                <p>
-                  An investment of <br />
-                  <span className="dollar">$2500</span>{" "}
-                  <span className="accent">
-                    {" "}
-                    USD <br />
-                    ($3000 +HST CAD)
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="box box-blue">
-            <div className="box-service-content">
               <h3>Shopify Design & Development</h3>
               <ul>
                 <li>Complete store design customized to your brand</li>
@@ -116,6 +85,44 @@ const ServicesPage = () => {
                     {" "}
                     USD <br />
                     ($3000 +HST CAD)
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="box box-blue">
+            <div className="box-service-content">
+              <h3>
+                Shopify Build <br />
+                (For Design Agencies)
+              </h3>
+              <ul>
+                <li>Your web design, my build</li>
+                <hr />
+                <li>
+                  Have your designs come to life on Shopify without any hassle
+                </li>
+                <hr />
+                <li>High quality build that's easy to update and maintain</li>
+                <hr />
+                <li>App installation & product setup</li>
+                <hr />
+                <li>Custom pages, sections & more</li>
+                <hr />
+                <li>
+                  Deliver a higher quality product to your clients more quickly
+                </li>
+                <hr />
+              </ul>
+              <div className="price">
+                <p>
+                  Starting at <br />
+                  <span className="dollar">$1200</span>{" "}
+                  <span className="accent">
+                    {" "}
+                    USD <br />
+                    ($1500 +HST CAD)
                   </span>
                 </p>
               </div>

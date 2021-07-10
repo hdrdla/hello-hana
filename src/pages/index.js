@@ -277,29 +277,6 @@ const IndexPage = () => {
           </a>
         </div>
       </section>
-
-      <div className="horizontal-line"></div>
-      <section className="center" id="newsletter">
-        <h2 className="hidden">Shopify Course and Squarespace Templates</h2>
-        <p className="h2">You don't want to miss it</p>
-        <p className="large">
-          <span className="highlight hl-blue">DIY Website Resources</span>{" "}
-          coming soon...
-        </p>
-
-        <p className="large">
-          Get on my email list to receive a{" "}
-          <span className="highlight hl-yellow">huge discount</span> when they
-          launch.
-        </p>
-        <div className="newsletter-block">
-          <script
-            async
-            data-uid="2ddd36003f"
-            src="https://hanadrdla.ck.page/2ddd36003f/index.js"
-          ></script>
-        </div>
-      </section>
     </Layout>
   )
 }

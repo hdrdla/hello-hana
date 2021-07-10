@@ -39,14 +39,14 @@ const Links = () => (
         </Link>
 
         <OutboundLink
-          href="https://hanadrdla.ck.page/prospective-client-packet"
+          href="https://lunatemplates.co"
           target="_blank"
           rel="noreferrer"
-          alt="Prospective Client Packet "
-          aria-label="Download my Prospective Client Packet"
+          alt="Luna Templates"
+          aria-label="See custom Shopify Templates for sale"
           className="btn btn-yellow btn-links"
         >
-          Prospective Client Packet
+          Luna Templates <br /> (Shopify Sections & More)
         </OutboundLink>
 
         <OutboundLink
@@ -57,7 +57,7 @@ const Links = () => (
           aria-label="Book a Consultation Call"
           className="btn btn-purple btn-links"
         >
-          Book a 15-minute Consultation Call
+          Book a 30-minute Consultation Call
         </OutboundLink>
         <br />
       </div>
