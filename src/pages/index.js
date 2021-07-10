@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
@@ -64,12 +63,12 @@ const IndexPage = () => {
       <section className="home">
         <div className="flex-space-between">
           <div className="hero-flex-1">
-            <p className="large">Hi, I'm Hana. Let me help you</p>
+            <p className="large">Hi, I'm Hana. Let me help you with</p>
             <p className="h1">
-              Connect with your clients through strategic web design
+              Strategic website design & development for e-commerce brands
             </p>
             <h1 className="hidden">
-              Shopify and Web Development for Women Entrepreneurs
+              Shopify Web Development for Impactful Businesses
             </h1>
             <Link to="/contact" className="btn btn-purple">
               Let's work together

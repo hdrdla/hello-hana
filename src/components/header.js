@@ -13,18 +13,6 @@ library.add(fab, faEnvelope, faChevronRight)
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  // const Tawk_API = "8f0f3f5179ce8a7a218213415f0bae5c6a6bb876" || {}
-
-  useEffect(() => {
-    var s1 = document.createElement("script")
-    var s0 = document.getElementsByTagName("script")[0]
-    s1.async = true
-    s1.src = "https://embed.tawk.to/5f1180367258dc118bee6d1f/default"
-    s1.charset = "UTF-8"
-    s1.setAttribute("crossorigin", "*")
-    s0.parentNode.insertBefore(s1, s0)
-  }, [])
-
   const data = useStaticQuery(graphql`
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
@@ -43,6 +31,9 @@ const Header = () => {
 
   return (
     <div>
+      <div className="announcement-bar">
+        Booking for mid-August — <Link to="/contact">Enquire Now</Link>
+      </div>
       <header>
         <Helmet>
           <script src="/path/to/flickity.pkgd.min.js"></script>
@@ -50,11 +41,6 @@ const Header = () => {
             async
             data-uid="2ddd36003f"
             src="https://hanadrdla.ck.page/2ddd36003f/index.js"
-          ></script>
-          <script
-            type="application/javascript"
-            src="https://sdki.truepush.com/sdk/v2.0.2/app.js"
-            async
           ></script>
           <meta
             name="p:domain_verify"

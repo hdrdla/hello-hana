@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Socials from "../components/socials"
 import SEO from "../components/seo"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
-import Recaptcha from "react-recaptcha"
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
@@ -16,16 +14,6 @@ const ContactPage = () => {
       }
     }
   `)
-
-  const [verify, setVerify] = useState(false)
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [site, setSite] = useState("")
-  const [msg, setMsg] = useState("")
-
-  var verifyCallback = function (response) {
-    setVerify(true)
-  }
 
   return (
     <Layout>
