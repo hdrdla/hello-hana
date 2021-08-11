@@ -4,15 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Web & Shopify Developer | Hana Drdla`,
-    description: `Hana Drdla is a Web Developer that designs and builds website on Shopify, Wordpress and Squarespace. Working with small businesses, Hana builds websites that convert visitors into customers.`,
+    title: `Shopify Web Developer | Hana Drdla`,
+    description: `Hana Drdla is a Web Developer that designs and builds website on Shopify. Working with small businesses, Hana builds websites that convert visitors into customers.`,
     author: `Hana Drdla`,
     keywords: `Shopify developer, Shopify courses, woman web developer, female web developer, frontend developer, Hana, Drdla, Hana Drdla`,
     siteUrl: "https://hanadrdla.com",
@@ -96,6 +93,14 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
       },
     },
   ],

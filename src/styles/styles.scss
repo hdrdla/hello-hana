@@ -4,7 +4,8 @@ $color-light: #f6f6f6;
 $color-primary: #b5b5d9;
 $color-secondary: #b6e7e8;
 $color-tertiary: #f8fd5e;
-$font-primary: "Lato", sans-serif;
+$font-heading: lato, sans-serif;
+$font-body: lato, sans-serif;
 
 $mobile: "screen and (max-width: 480px)";
 $tablet: "screen and (max-width:768px)";
@@ -32,7 +33,7 @@ main {
 
 body {
   box-sizing: border-box;
-  font-family: $font-primary;
+  font-family: $font-body;
   font-weight: 400;
   color: $color-dark;
   background-color: $color-light;
@@ -294,17 +295,18 @@ h2,
 h3,
 .h3,
 h4 {
+  font-family: $font-heading;
   font-weight: 500;
 }
 
 h1,
 .h1 {
-  font-size: 5rem;
+  font-size: 4.4rem;
 }
 
 h2,
 .h2 {
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   padding-bottom: 4rem;
 }
 
@@ -357,6 +359,13 @@ button,
 a.btn {
   font-size: 2.5rem;
   text-decoration: none;
+}
+
+.hf {
+  font-family: $font-heading;
+}
+.announcement-bar.hf {
+  font-size: 0.8rem;
 }
 
 @media #{$desktop} {
@@ -439,7 +448,7 @@ a:focus,
   margin: 3rem 0;
   background-color: $color-primary;
   border: 3px solid $color-primary;
-  font-family: $font-primary;
+  font-family: $font-body;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -1026,13 +1035,13 @@ small {
 
 .formkit-input {
   border: 2px solid $color-primary !important;
-  font-family: $font-primary;
+  font-family: $font-body;
 }
 
 .formkit-submit {
   border-radius: 0 !important;
   background-color: $color-primary;
-  font-family: $font-primary !important;
+  font-family: $font-body !important;
   font-size: 2.5rem !important;
 }
 
@@ -1405,7 +1414,7 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"],
 .contact-form textarea {
   width: 100%;
   font-size: 1.5rem;
-  font-family: $font-primary;
+  font-family: $font-body;
   padding: 1rem;
   margin: 1rem 0;
   border: 2px solid $color-primary;
