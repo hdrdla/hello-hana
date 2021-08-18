@@ -74,17 +74,17 @@ const ServicesPage = () => {
                 <hr />
                 <li>Newsletter email collection</li>
                 <hr />
-                <li>5 hours of code customizations</li>
+                <li>10 hours of code customizations</li>
                 <hr />
               </ul>
               <div className="price">
                 <p>
                   Starting at <br />
-                  <span className="dollar">$2500</span>{" "}
+                  <span className="dollar">$3000</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($3000 +HST CAD)
+                    ($3800 +HST CAD)
                   </span>
                 </p>
               </div>
@@ -118,11 +118,11 @@ const ServicesPage = () => {
               <div className="price">
                 <p>
                   Starting at <br />
-                  <span className="dollar">$1200</span>{" "}
+                  <span className="dollar">$1500</span>{" "}
                   <span className="accent">
                     {" "}
                     USD <br />
-                    ($1500 +HST CAD)
+                    ($1900 +HST CAD)
                   </span>
                 </p>
               </div>
