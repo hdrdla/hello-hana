@@ -6,6 +6,8 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import SEO from "../components/seo"
 import Flickity from "react-flickity-component"
 import "../styles/flickity.css"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+
 
 import fraukeGIF from "../gifs/Frauke-Seewald-Website.gif"
 import soscGIF from "../gifs/Sense-of-Self-Counselling-Website.gif"
@@ -63,15 +65,12 @@ const IndexPage = () => {
       <section className="home">
         <div className="flex-space-between">
           <div className="hero-flex-1">
-            <p className="large">Hi, I'm Hana. Let me help you with</p>
-            <p className="h1">
-              Strategic website design & development for e-commerce brands
-            </p>
-            <h1 className="hidden">
-              Shopify Web Development for Impactful Businesses
+            <p className="large">Hi, I'm Hana. I specialize in</p>
+            <h1>
+              Strategic website design & development for brands on Shopify
             </h1>
-            <Link to="/contact" className="btn btn-purple">
-              Let's work together
+            <Link to="/services" className="btn btn-purple">
+              Learn More
             </Link>
           </div>
           <div className="hero-flex-2">
@@ -86,14 +85,18 @@ const IndexPage = () => {
 
       <div className="horizontal-line"></div>
       <section id="services">
-        <h2 className="center">Websites that Convert</h2>
+        <p className="center h2">How can I help you?</p>
+        <h2 className="hidden">Websites that Convert</h2>
         <div className="flex-space-between home">
           <div className="box box-purple box-home">
             <div className="box-content">
-              <h3>Website Design & Development</h3>
+              <h3 className="h3">I need a website</h3>
+              <h3 className="hidden">
+              Shopify Website Design & Development
+              </h3>
               <p>
                 Custom websites that show your clients the quality and value of
-                your work. Finally, something you can be proud to show off.
+                your work.
               </p>
               <div className="center">
                 <Link
@@ -107,7 +110,7 @@ const IndexPage = () => {
                     })
                   }}
                 >
-                  I need a website!
+                  Open Shop
                 </Link>
               </div>
             </div>
@@ -115,10 +118,10 @@ const IndexPage = () => {
 
           <div className="box box-blue box-home">
             <div className="box-content">
-              <h3>Shopify Design & Store Setup</h3>
+              <h3 className="h3">Build my design</h3>
+              <h3 className="hidden">Custom Shopify Website Development</h3>
               <p>
-                Shopify stores that make you want to shop. Let me navigate
-                Shopify’s code so you can focus on growing the business.
+                Your design, my build. Graphic designers, I’ll bring your design to life on Shopify.
               </p>
               <div className="center">
                 <Link
@@ -132,7 +135,7 @@ const IndexPage = () => {
                     })
                   }}
                 >
-                  Let's Open Shop
+                  Let's Team Up
                 </Link>
               </div>
             </div>
@@ -140,29 +143,27 @@ const IndexPage = () => {
 
           <div className="box box-yellow box-home">
             <div className="box-content">
-              <h3>DIY Resources: Learn & Build</h3>
-              <p>
-                <strong>Make your own website!</strong> <br />
-                Shopify Course -{" "}
-                <span className="accent purple-font">Coming Soon </span>
-                <br />
-                Website Templates -{" "}
-                <span className="accent purple-font">Coming Soon </span>
+              <h3 className="h3">I want to learn</h3>
+              <h3 className="hidden">
+              Shopify DIY Resources & Course
+              </h3>
+              <p>Resources for web designers who want to offer Shopify website services.
               </p>
               <div className="center">
-                <Link
-                  to="#newsletter"
-                  className="btn btn-yellow"
-                  onClick={e => {
+                  <OutboundLink href="https://www.lunatemplates.co"
+                    target="_blank"
+                    rel="Hana Drdla"
+                    alt="Luna Templates "
+                    aria-label="Shopify templates and courses"
+                    className="btn btn-yellow"
+                    onClick={e => {
                     trackCustomEvent({
                       category: "Custom Button",
                       action: "Click",
-                      label: "Home Service - Newsletter",
+                      label: "Home Service - Luna",
                     })
                   }}
-                >
-                  Get on the list
-                </Link>
+                  >Learn Shopify</OutboundLink>
               </div>
             </div>
           </div>

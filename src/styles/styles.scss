@@ -504,9 +504,9 @@ a:focus,
   background-color: $color-light;
 }
 
-.box .btn-purple,
-.box .btn-blue,
-.box .btn-yellow {
+.box .btn-purple, .box-wide .btn-purple,
+.box .btn-blue, .box-wide .btn-blue,
+.box .btn-yellow, .box-wide .btn-yellow {
   background-color: transparent;
 }
 
@@ -710,6 +710,13 @@ header {
   margin: 2rem 0;
 }
 
+.box-wide {
+  background-color: #fff;
+  border: 1px solid $color-medium;
+  width: 100%;
+  margin: 2rem 0;
+}
+
 .home .box-home h3 {
   width: 80%;
 }
@@ -731,14 +738,25 @@ header {
 }
 
 .box-service-content {
-  margin: 3rem 0;
+  margin: 4rem 3rem 1rem 3rem ;
 }
 
-.box-service-content h3,
+.service-box-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-box-inner > div {
+  width: 47%;
+}
+
+
+/*.box-service-content h3,
 .box-service-content p,
 .box-service-content li {
   padding: 1rem 3rem;
-}
+}*/
 
 .box-content a {
   width: 100%;
@@ -747,7 +765,7 @@ header {
 
 .price {
   margin-top: 1rem;
-  margin-bottom: -2rem;
+  margin-bottom: 2rem;
   .dollar {
     font-size: 4rem;
   }
@@ -833,6 +851,9 @@ ul {
   .box h3 {
     width: 100%;
   }
+  .service-box-inner > div {
+    width: 100%;
+  }
 }
 
 @media #{$tablet} {
@@ -890,14 +911,18 @@ ul {
   }
 }
 
-ul.chevron-list {
+ul.chevron-list, ul.chevron-list-services {
   list-style-type: none;
 }
 
 .chevron-list li {
   margin-bottom: 1.5rem;
 }
-.fa-chevron-right {
+.chevron-list-services li {
+    margin-bottom: .7rem;
+}
+
+.fa-chevron-right, .fa-plus {
   font-size: 1.5rem;
   margin-right: 1rem;
 }
@@ -917,6 +942,10 @@ ul.chevron-list {
 footer {
   background: $color-dark;
   color: $color-light;
+  border-bottom: 10px solid $color-tertiary;
+  p {
+    color: $color-light;
+  }
   ul {
     list-style-type: none;
     line-height: 1.2;
@@ -941,14 +970,36 @@ footer {
 .footer-content {
   width: 80%;
   margin: auto;
-  padding-top: 9vh;
+  padding: 5vh 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   p,
   a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
+}
+
+.footer-left {
+  text-align: right;
+}
+
+.footer-left, .footer-right {
+  width: 38%;
+  margin: 5rem;
+}
+
+.footer-blog-title-left {
+  color: $color-secondary;
+}
+
+.footer-blog-title-right {
+  color: $color-primary;
+}
+
+p.footer-blog-title-left, p.footer-blog-title-right {
+  font-size: 3.5rem;
+  padding-bottom: 0;
 }
 
 .socials li {
@@ -977,6 +1028,13 @@ small {
   .footer-news {
     margin-top: 2rem;
   }
+  p.footer-blog-title-left, p.footer-blog-title-right {
+    font-size: 3rem;
+  }
+  .footer-left, .footer-right {
+    width: 42%;
+    margin: 2rem;
+  }
 }
 
 @media #{$tablet} {
@@ -986,9 +1044,12 @@ small {
   footer ul {
     padding-bottom: 4rem;
   }
-
   footer .socials {
-    width: 10rem;
+    width: 100%;
+  }
+  .footer-left, .footer-right {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -999,11 +1060,8 @@ small {
   .footer-content {
     width: 80%;
   }
-  footer .socials {
-    width: 100%;
-  }
-  footer a {
-    line-height: 3;
+  p.footer-blog-title-left, p.footer-blog-title-right {
+  font-size: 2.5rem;
   }
 }
 
@@ -1113,6 +1171,20 @@ formkit-form[data-uid="49b955eab3"][min-width~="700"] [data-style="clean"],
     padding-left: 0vw;
   }
 }
+
+/* Services */
+
+section.full-width {
+  width: 100vw;
+  margin-left: -12.5%;
+  margin-bottom: 0;
+  padding: 10vh 0;
+}
+
+section.bg-full-purple {
+  background-color: $color-primary;
+}
+
 
 /* Flickity */
 

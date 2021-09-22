@@ -55,146 +55,187 @@ const ServicesPage = () => {
       <div className="horizontal-line"></div>
       <section>
         <h2 className="hidden">
-          Shopify, Wordpress and Squarespace Web Design
+          Shopify Development Services
         </h2>
         <div className="flex-space-between">
-          <div className="box box-purple">
+          <div className="box-wide box-purple">
             <div className="box-service-content">
               <h3>Shopify Design & Development</h3>
-              <ul>
-                <li>Complete store design customized to your brand</li>
-                <hr />
-                <li>Product addition & organization</li>
-                <hr />
-                <li>About, FAQ, Contact & Policy pages</li>
-                <hr />
-                <li>
-                  E-commerce ready (shipping rates, customer emails, etc).
-                </li>
-                <hr />
-                <li>Newsletter email collection</li>
-                <hr />
-                <li>10 hours of code customizations</li>
-                <hr />
-              </ul>
-              <div className="price">
-                <p>
-                  Starting at <br />
-                  <span className="dollar">$3000</span>{" "}
-                  <span className="accent">
-                    {" "}
-                    USD <br />
-                    ($3800 +HST CAD)
-                  </span>
-                </p>
-              </div>
+              <div class="service-box-inner">
+                <div>
+                <p>Stand out from your competitors with a store that proudly represents your brand. This is a start to finish process that includes adding and organizing all your products, installing apps, store design and build, and final touches to prepare you to launch your new website.<br /><br />
+
+                <strong>Timeline:</strong> 4-6 weeks</p>
+                <div className="price">
+                  <p>
+                    Starting at <br />
+                    <span className="dollar">$3000</span>{" "}
+                    <span className="accent">
+                      {" "}
+                      USD <br />
+                      ($3800 +HST CAD)
+                    </span>
+                  </p>
+                </div>
+
+                </div>
+                <div class="service-box-right">
+                <p><strong>Includes:</strong></p>
+                <ul className="chevron-list-services">
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Store design customized to your brand</li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Product addition & organization</li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> About, FAQ, Contact & policy pages
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Shipping rates, customer emails 
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> App installation & setup 
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Newsletter email collection 
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Shopify Maintenace guide 
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="plus" /> Add-ons available 
+                  </li>
+                </ul>
+                </div>
+              </div>  
+
+                <Link
+                  to="/contact"
+                  className="btn btn-purple"
+                >
+                  Enquire Now
+                </Link>
             </div>
           </div>
 
-          <div className="box box-blue">
+
+
+
+          <div className="box-wide box-blue">
             <div className="box-service-content">
-              <h3>
-                Shopify Build <br />
-                (For Design Agencies)
-              </h3>
-              <ul>
-                <li>Your web design, my build</li>
-                <hr />
-                <li>
-                  Have your designs come to life on Shopify without any hassle
-                </li>
-                <hr />
-                <li>High quality build that's easy to update and maintain</li>
-                <hr />
-                <li>App installation & product setup</li>
-                <hr />
-                <li>Custom pages, sections & more</li>
-                <hr />
-                <li>
-                  Deliver a higher quality product to your clients more quickly
-                </li>
-                <hr />
-              </ul>
-              <div className="price">
-                <p>
-                  Starting at <br />
-                  <span className="dollar">$1500</span>{" "}
-                  <span className="accent">
-                    {" "}
-                    USD <br />
-                    ($1900 +HST CAD)
-                  </span>
-                </p>
-              </div>
+              <h3>Shopify Build (for Designers)</h3>
+              <div class="service-box-inner">
+                <div>
+                <p>You’re a graphic designer and need someone to bring your design to life. Forget the hassle and let me build so you can deliver a higher quality product to your clients more quickly.<br /><br />
+
+                <strong>Timeline:</strong> 1-3 weeks</p>
+                <div className="price">
+                  <p>
+                    Starting at <br />
+                    <span className="dollar">$1500</span>{" "}
+                    <span className="accent">
+                      {" "}
+                      USD <br />
+                      ($1900 +HST CAD)
+                    </span>
+                  </p>
+                </div>
+
+                </div>
+                <div class="service-box-right">
+                <p><strong>Includes:</strong></p>
+                <ul className="chevron-list-services">
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Full theme setup</li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Custom sections built</li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Easily editable customizations
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Animations? Yes!
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> App installation & setup 
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Detail oriented work 
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> Minor revisions so that it's perfect for your client! 
+                  </li>
+
+                </ul>
+                </div>
+              </div>  
+
+                <Link
+                  to="/contact"
+                  className="btn btn-blue"
+                >Enquire Now
+                </Link>
             </div>
           </div>
 
-          <div className="box box-yellow">
+
+
+          <div className="box-wide box-yellow">
             <div className="box-service-content">
-              <h3>Book Me for a Day — One Day Intensive</h3>
-              <ul>
-                <li>
-                  Have all your website needs completed quickly & efficiently
-                </li>
-                <hr />
-                <li>My full attention for one day</li>
-                <hr />
-                <li>The convenience of fast & good work</li>
-                <hr />
-                <li>Be close to the process</li>
-                <hr />
-                <li>Know the cost upfront</li>
-                <hr />
-                <li>Includes pre- & post-day work and communication</li>
-                <hr />
-              </ul>
+              <h3>Book Me for a Day</h3>
+              <div class="service-box-inner">
+                <div>
+                <p>A one-day intensive with my full attention. Have all your website needs completed quickly, and efficiently with the confidence that the work is done well. Be close to the process and know the full cost upfront. No need to book months in advance!<br /><br /></p>
 
-              <div className="price">
-                <p>
-                  Day rate of <br />
-                  <span className="dollar">$400</span>{" "}
-                  <span className="accent">
-                    {" "}
-                    USD <br />
-                    ($500 +HST CAD)
-                  </span>
-                </p>
-              </div>
+                <div className="price">
+                  <p>
+                    <span className="dollar">$400</span>{" "}
+                    <span className="accent">
+                      {" "}
+                      USD <br />
+                      ($500 +HST CAD)
+                    </span>
+                  </p>
+                </div>
+
+                </div>
+                <div class="service-box-right">
+                <p><strong>Perfect if:</strong></p>
+                <ul className="chevron-list-services">
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> You need updates done to your website</li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> You want training so you can make updates yourself</li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> You have questions about how to reach your customers
+
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> You are a designer who needs guidance on Shopify
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" /> You need apps installed in your store
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon="chevron-right" />  You are an agency looking for white-label services
+                  </li> 
+                </ul>
+                </div>
+              </div>  
+
+                <Link
+                  to="/contact"
+                  className="btn btn-yellow"
+                >Enquire Now
+                </Link>
             </div>
           </div>
-        </div>
-
-        <div className="center">
-          <Link to="/contact" className="btn btn-blue">
-            Start your project
-          </Link>
         </div>
       </section>
+{/*}
+      <section className="full-width bg-full-purple">
+        <h2 className="center">Praise from Clients</h2>
 
-      <div className="horizontal-line"></div>
-      <section className="center">
-        <h2 className="hidden">Squarespace Website Templates</h2>
-        <p className="h2 center">
-          Prefer to DIY? <br />
-          On a small budget?
-        </p>
-        <p className="large">
-          <span className="highlight hl-blue">DIY Website Resources</span>{" "}
-          coming soon...
-        </p>
-        <p className="large">
-          Get on my email list to receive a{" "}
-          <span className="highlight hl-yellow">huge discount</span> when they
-          launch.
-        </p>
-        <div className="newsletter-block">
-          <script
-            async
-            data-uid="2ddd36003f"
-            src="https://hanadrdla.ck.page/2ddd36003f/index.js"
-          ></script>
-        </div>
-      </section>
+
+  </section>*/}
     </Layout>
   )
 }

@@ -6,66 +6,33 @@ import Socials from "./socials"
 const Footer = () => (
   <footer>
     <div className="footer-content">
-      <div className="footer-nav">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <ul>
-          <li>
-            <Link to="/client-portal">Client Portal</Link>
-          </li>
-          <li>
-            <Link to="/shopify-course">Shopify Course</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
+      <div className="footer-left">
+        <p>New to Shopify, looking for DIY?</p>
+        <Link to="/blog/11-mistakes-shopify-beginners-make">
+          <p className="footer-blog-title-left">
+            11 Mistakes that Shopify Beginners Make
+          </p>
+        </Link>
         <br />
+        <Link to="/client-portal">
+          <p>
+            Client Portal
+          </p>
+        </Link>
       </div>
 
-      <div>
-        <p>Let's be friends</p>
+      <div className="footer-right">
+        <p>Web Designer, looking for inspiration?</p>
+        <Link to="/blog/unique-best-shopify-stores">
+          <p className="footer-blog-title-right">
+            17 Unique E-Commerce Stores Using Shopify
+          </p>
+        </Link>
+        <br />
         <Socials />
       </div>
-
-      <div className="footer-news">
-        <p>Find out when I launch templates, courses & free resources</p>
-        <script
-          async
-          data-uid="49b955eab3"
-          src="https://hanadrdla.ck.page/49b955eab3/index.js"
-        ></script>
-        <Helmet>
-          <script
-            async
-            data-uid="49b955eab3"
-            src="https://hanadrdla.ck.page/49b955eab3/index.js"
-          ></script>
-        </Helmet>
-      </div>
     </div>
 
-    <div className="center footer-print">
-      <p>designed and developed by Hana Drdla, 2021</p>
-    </div>
   </footer>
 )
 

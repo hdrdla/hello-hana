@@ -13,15 +13,15 @@ export const Socials = () => (
     >
       <FontAwesomeIcon icon={["fab", "instagram"]} />
     </OutboundLink>
-    <OutboundLink
+   {/* <OutboundLink
       href="https://twitter.com/hdrdla"
       target="_blank"
       rel="noreferrer"
       alt="Twitter "
       aria-label="Visit my Twitter profile"
-    >
+   >
       <FontAwesomeIcon icon={["fab", "twitter"]} />
-    </OutboundLink>
+    </OutboundLink> */} 
     <OutboundLink
       href="https://www.facebook.com/groups/WomenOnShopify"
       target="_blank"

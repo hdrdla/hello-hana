@@ -29,7 +29,7 @@ function Layout(props) {
 
   return (
     <>
-      <Header siteTitle="Hana Drdla" />
+      <Header siteTitle="Hana Drdla - Shopify Web Developer" />
       <Wrapper>
         <main>{props.children}</main>
       </Wrapper>
