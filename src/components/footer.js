@@ -7,7 +7,7 @@ const Footer = () => (
   <footer>
     <div className="footer-content">
       <div className="footer-left">
-        <p>New to Shopify, looking for DIY?</p>
+        <p>New to Shopify, DIYing your site?</p>
         <Link to="/blog/11-mistakes-shopify-beginners-make">
           <p className="footer-blog-title-left">
             11 Mistakes that Shopify Beginners Make

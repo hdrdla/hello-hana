@@ -4,12 +4,30 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Img from "gatsby-image"
 
 const ServicesPage = () => {
   const data = useStaticQuery(graphql`
     query {
+      test1: file(relativePath: { eq: "Client-Testimonials-1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 700) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      test2: file(relativePath: { eq: "Client-Testimonials-2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 700) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       site {
         siteMetadata {
+          title
+          description
+          author
           image
         }
       }
@@ -230,12 +248,22 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-{/*}
+
       <section className="full-width bg-full-purple">
         <h2 className="center">Praise from Clients</h2>
-
-
-  </section>*/}
+          <div className="flex-space-around testimonial-images">
+            <Img
+              fluid={data.test1.childImageSharp.fluid}
+              className="testimonials"
+              alt="Screenshots of client testimonials"
+            />
+            <Img
+              fluid={data.test2.childImageSharp.fluid}
+              className="testimonials"
+              alt="Screenshots of client testimonials"
+            />
+          </div>
+      </section>
     </Layout>
   )
 }
