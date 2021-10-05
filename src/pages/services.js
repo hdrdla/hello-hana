@@ -76,7 +76,7 @@ const ServicesPage = () => {
           Shopify Development Services
         </h2>
         <div className="flex-space-between">
-          <div className="box-wide box-purple">
+          <div className="box-wide box-purple" id="service-full">
             <div className="box-service-content">
               <h3>Shopify Design & Development</h3>
               <div class="service-box-inner">
@@ -138,7 +138,7 @@ const ServicesPage = () => {
 
 
 
-          <div className="box-wide box-blue">
+          <div className="box-wide box-blue" id="service-build">
             <div className="box-service-content">
               <h3>Shopify Build (for Designers)</h3>
               <div class="service-box-inner">
@@ -196,7 +196,7 @@ const ServicesPage = () => {
 
 
 
-          <div className="box-wide box-yellow">
+          <div className="box-wide box-yellow" id="service-day">
             <div className="box-service-content">
               <h3>Book Me for a Day</h3>
               <div class="service-box-inner">

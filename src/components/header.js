@@ -33,9 +33,9 @@ const Header = () => {
   return (
     <div>
       <div className="announcement-bar">
-        Booking for October —{" "}
-        <Link to="/contact">
-          <span className="hf">Enquire Now</span>
+        Booking Me for a Day! —{" "}
+        <Link to="/services#service-day">
+          <span className="hf">Learn More</span>
         </Link>
       </div>
       <header>

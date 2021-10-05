@@ -100,7 +100,7 @@ const IndexPage = () => {
               </p>
               <div className="center">
                 <Link
-                  to="/services"
+                  to="/services#service-full"
                   className="btn btn-purple"
                   onClick={e => {
                     trackCustomEvent({
@@ -125,7 +125,7 @@ const IndexPage = () => {
               </p>
               <div className="center">
                 <Link
-                  to="/services"
+                  to="/services#service-build"
                   className="btn btn-blue"
                   onClick={e => {
                     trackCustomEvent({
