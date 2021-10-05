@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <div>
       <div className="announcement-bar">
-        Booking Me for a Day! —{" "}
+        Book Me for a Day! —{" "}
         <Link to="/services#service-day">
           <span className="hf">Learn More</span>
         </Link>
