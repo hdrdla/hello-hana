@@ -87,11 +87,10 @@ const ServicesPage = () => {
                 <div className="price">
                   <p>
                     Starting at <br />
-                    <span className="dollar">$3000</span>{" "}
+                    <span className="dollar">$6000</span>{" "}
                     <span className="accent">
                       {" "}
-                      USD <br />
-                      ($3800 +HST CAD)
+                      USD
                     </span>
                   </p>
                 </div>
@@ -149,11 +148,10 @@ const ServicesPage = () => {
                 <div className="price">
                   <p>
                     Starting at <br />
-                    <span className="dollar">$1500</span>{" "}
+                    <span className="dollar">$3000</span>{" "}
                     <span className="accent">
                       {" "}
-                      USD <br />
-                      ($1900 +HST CAD)
+                      USD
                     </span>
                   </p>
                 </div>
@@ -205,11 +203,10 @@ const ServicesPage = () => {
 
                 <div className="price">
                   <p>
-                    <span className="dollar">$400</span>{" "}
+                    <span className="dollar">$700</span>{" "}
                     <span className="accent">
                       {" "}
-                      USD <br />
-                      ($500 +HST CAD)
+                      USD
                     </span>
                   </p>
                 </div>
